@@ -1,0 +1,63 @@
+module adder(cout, out, in1, in2, cin);
+	input[63:0] in1, in2;
+	input cin;
+	output[63:0] out;
+	output cout;
+	
+	wire c1,c2,c3;
+	wire[31:0] in1_half1, in1_half2, in2_half1, in2_half2;
+	wire[31:0] op1,op2,op3,op4;
+	
+	
+	generate
+		genvar i;
+		for(i=0; i<32; i = i+1) begin : in1_half1
+			assign in1_half1[i] = in1[i]
+		end
+	endgenerate
+	
+	generate
+		genvar i;
+		for(i=0; i<32; i = i+1) begin : in1_half2
+			assign in1_half2[i] = in1[i +32]
+		end
+	endgenerate
+	
+	generate
+		genvar i;
+		for(i=0; i<32; i = i+1) begin : in2_half1
+			assign in2_half1[i] = in2[i]
+		end
+	endgenerate
+	
+	generate
+		genvar i;
+		for(i=0; i<32; i = i+1) begin : in2_half2
+			assign in2_half2[i] = in2[i +32]
+		end
+	endgenerate
+	
+	RCA_32(c1,op1 in1_half1, in2_half1, cin);
+	
+	RCA_32(c2,op2 in1_half2, in2_half2, 1'b0);	
+	RCA_32(c3,op3 in1_half2, in2_half2, 1'b1);	
+	
+	mux2_1(op4,c1, op2,op3);
+	
+	// To Do for overfflow u need 2_1 mux but with 1 bit
+	
+	generate
+		genvar i;
+		for(i=0; i<32; i = i+1) begin : out_half1
+			assign out[i] = op1[i]
+		end
+	endgenerate
+	
+	generate
+		genvar i;
+		for(i=0; i<32; i = i+1) begin : out_half2
+			assign out[i+32] = op4[i +32]
+		end
+	endgenerate 
+
+endmodule 
