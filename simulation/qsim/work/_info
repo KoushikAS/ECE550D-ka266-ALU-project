@@ -8,108 +8,150 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/ka266/Documents/Project1/simulation/qsim
-valu
-Z1 !s110 1663427120
+vadder
+Z1 !s110 1663430831
 !i10b 1
-!s100 ThV7S1@NK5ll:Sl:mdXk?2
-ICE4`lh>@k<C1jZb<S0^;P3
+!s100 cS;Z:0<1H8K6WLCzlgdF>2
+IVJ@_<Ohklb54hmiT_fZI>3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1663427119
-Z3 8alu.vo
-Z4 Falu.vo
-Z5 L0 32
-Z6 OV;L;10.5b;63
+Z3 w1663430829
+Z4 8alu.vo
+Z5 Falu.vo
+Z6 L0 32
+Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1663427120.000000
-Z8 !s107 alu.vo|
-Z9 !s90 -work|work|alu.vo|
+Z8 !s108 1663430830.000000
+Z9 !s107 alu.vo|
+Z10 !s90 -work|work|alu.vo|
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
-valu_vlg_vec_tst
+Z11 o-work work
+Z12 tCvgOpt 0
+vadder_vlg_vec_tst
 R1
+!i10b 1
+!s100 KZdiZ=El>A=D53GiE^SGZ2
+I1DV9mKDe8;UF;XB`QSHbh3
+R2
+R0
+w1663430828
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+Z13 L0 30
+R7
+r1
+!s85 0
+31
+!s108 1663430831.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+R12
+valu
+Z14 !s110 1663427120
+!i10b 1
+!s100 ThV7S1@NK5ll:Sl:mdXk?2
+ICE4`lh>@k<C1jZb<S0^;P3
+R2
+R0
+w1663427119
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1663427120.000000
+R9
+R10
+!i113 1
+R11
+R12
+valu_vlg_vec_tst
+R14
 !i10b 1
 !s100 `EE[BN`EDY3]0:]fcfzm>0
 ILRH?fQHCnM:omT4iboeF;1
 R2
 R0
 w1663427117
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-Z12 L0 30
-R6
-r1
-!s85 0
-31
-R7
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
-!i113 1
-R10
-R11
-vhard_block
-Z13 !s110 1663427639
-!i10b 1
-!s100 cfnG`QlkiWN<iZn971GJ_2
-IOdFPL@4`iaiC_:6mg[oh62
-R2
-R0
-Z14 w1663427638
-R3
-R4
-L0 2261
-R6
-r1
-!s85 0
-31
-Z15 !s108 1663427639.000000
-R8
-R9
-!i113 1
-R10
-R11
-vsubtractor
+Z16 8Waveform.vwf.vt
+Z17 FWaveform.vwf.vt
 R13
+R7
+r1
+!s85 0
+31
+R15
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
 !i10b 1
-!s100 C9>]>d[SLaPz3BNL^BXOG2
-I=Ne7JfQ5QEh9L6`l]F5gj3
+!s100 <`454N=5UiU4Yjk;:a03g1
+IV^AhoS1><Q_EQcLO^aNLi0
 R2
 R0
-R14
 R3
 R4
 R5
-R6
+L0 3192
+R7
 r1
 !s85 0
 31
-R15
 R8
 R9
-!i113 1
 R10
+!i113 1
 R11
-vsubtractor_vlg_vec_tst
-R13
+R12
+vsubtractor
+Z20 !s110 1663429173
 !i10b 1
-!s100 f8aLlK;Q?lE_0@Jk4bT<C2
-ILEgza;@jmAnOHBN3h=Z;g3
+!s100 F<3YlHLne=75@<;]Sm6oJ2
+IKdCczXMYahJ?2LVAMJcHJ3
 R2
 R0
-w1663427637
-8Waveform1.vwf.vt
-FWaveform1.vwf.vt
-R12
+w1663429172
+R4
+R5
 R6
+R7
 r1
 !s85 0
 31
-R15
-!s107 Waveform1.vwf.vt|
-!s90 -work|work|Waveform1.vwf.vt|
-!i113 1
+Z21 !s108 1663429173.000000
+R9
 R10
+!i113 1
 R11
+R12
+vsubtractor_vlg_vec_tst
+R20
+!i10b 1
+!s100 X14<=5;9eVc55MfaI^ZjX2
+InaJ6BR7HJXGcD`WfJ?9gL3
+R2
+R0
+w1663429171
+R16
+R17
+R13
+R7
+r1
+!s85 0
+31
+R21
+R18
+R19
+!i113 1
+R11
+R12

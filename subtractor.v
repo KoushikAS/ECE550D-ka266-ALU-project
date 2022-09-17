@@ -1,7 +1,7 @@
-module subtractor(cout, out, in1, in2);
+module subtractor(overflow, cout, out, in1, in2);
 	input[31:0] in1, in2;
 	output[31:0] out;
-	output cout;
+	output cout, overflow;
 	
 	wire[31:0] w;
 	
@@ -12,6 +12,6 @@ module subtractor(cout, out, in1, in2);
 		end
 	endgenerate 
 	
-	adder(cout, out, in1, w, 1'b1);
+	adder(oveflow, cout, out, in1, w, 1'b1);
 
 endmodule 

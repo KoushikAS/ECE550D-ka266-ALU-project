@@ -1,8 +1,8 @@
-module RCA_16(cout,out,in0,in1,cin);
+module RCA_16(overflow, cout,out,in0,in1,cin);
 	input[15:0] in0,in1;
 	input cin;
 	output[15:0] out;
-	output cout;
+	output cout,overflow;
 	
 	wire[14:0] w;
 	
@@ -16,5 +16,7 @@ module RCA_16(cout,out,in0,in1,cin);
 	endgenerate 
 	
 	fulladder (cout,out[15],in0[15],in1[15],w[14]);
+	
+	xor(overflow, cout, w[14]);
 	
 endmodule 
