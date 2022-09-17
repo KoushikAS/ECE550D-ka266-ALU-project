@@ -1,0 +1,18 @@
+module subtractor(cout, out, in1, in2, cin);
+	input[31:0] in1, in2;
+	input cin;
+	output[31:0] out;
+	output cout;
+	
+	wire[31:0] w;
+	
+	genvar i;
+	generate
+		for(i=1; i<15; i = i+1) begin : negate
+			not (w[i], in2);
+		end
+	endgenerate 
+	
+	fulladder(cout, out, in1, w, 1'b1);
+
+endmodule 

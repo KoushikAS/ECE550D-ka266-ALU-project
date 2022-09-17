@@ -1,8 +1,13 @@
-module fulladder(c, out,in1, in2);
-	input in1,in2;
-	output c,out;
+module fulladder(cout, out,in1, in2,cin);
+	input in1,in2,cin;
+	output cout,out;
+	wire w1, w2, w3;
 	
-	xor(out,in1,in2);
-	and(c,in1,in2);
+	xor(w1,in1,in2);
+	xor(out, w1, cin);
+	
+	and(w2,w1,cin);
+	and(w3,in1,in2);
+	or(cout,w2,w3);
 	
 endmodule 

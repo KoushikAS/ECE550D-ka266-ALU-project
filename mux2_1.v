@@ -1,10 +1,10 @@
 module mux2_1(out, s, in0, in1);
-	input[31:0] in0, in1;
-	output[31:0] out;
+	input[15:0] in0, in1;
+	output[15:0] out;
 	input s;
 	
 	wire snot;
-	wire[31:0] w1,w2;
+	wire[15:0] w1,w2;
 	
 	not(snot,s);
 		
@@ -12,7 +12,7 @@ module mux2_1(out, s, in0, in1);
 	// First And Gate for 0th poistion
 	genvar i;
 	generate
-		for(i=0; i<32; i = i+1) begin : andgate1
+		for(i=0; i<16; i = i+1) begin : andgate1
 			and(w1[i],in0[i],snot);
 		end
 	endgenerate
@@ -20,7 +20,7 @@ module mux2_1(out, s, in0, in1);
 	// Second And Gate for 1st poistion	
 	genvar j;
 	generate
-		for(j=0; j<32; j = j+1) begin : andgate2
+		for(j=0; j<16; j = j+1) begin : andgate2
 			and(w2[j],in1[j], s);
 		end
 	endgenerate
@@ -29,7 +29,7 @@ module mux2_1(out, s, in0, in1);
 	//Final Or Gate
 	genvar k;
 	generate
-		for(k=0; k<32; k = k+1) begin : orgate
+		for(k=0; k<16; k = k+1) begin : orgate
 			or(out[k],w1[k],w2[k]);
 		end
 	endgenerate 

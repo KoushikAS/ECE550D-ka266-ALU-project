@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Sep 15 16:06:20 2022
+Analysis & Synthesis Status : Successful - Sat Sep 17 11:11:31 2022
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : alu
-Top-level Entity Name : mux2_1
+Top-level Entity Name : subtractor
 Family : Cyclone IV E
-Total logic elements : 32
-    Total combinational functions : 32
+Total logic elements : 48
+    Total combinational functions : 48
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 97

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu
-Thu Sep 15 16:06:20 2022
+Sat Sep 17 11:11:31 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -14,9 +14,12 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "adder:comb_35|RCA_16:comb_5"
+ 10. Port Connectivity Checks: "adder:comb_35|RCA_16:comb_4"
+ 11. Port Connectivity Checks: "adder:comb_35"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +46,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 15 16:06:20 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 17 11:11:31 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
-; Top-level Entity Name              ; mux2_1                                      ;
+; Top-level Entity Name              ; subtractor                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 32                                          ;
-;     Total combinational functions  ; 32                                          ;
+; Total logic elements               ; 48                                          ;
+;     Total combinational functions  ; 48                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 97                                          ;
@@ -66,7 +69,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; mux2_1             ; alu                ;
+; Top-level entity name                                                      ; subtractor         ; alu                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,54 +165,79 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
-; mux2_1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux2_1.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; mux2_1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux2_1.v     ;         ;
+; fulladder.v                      ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/fulladder.v  ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/adder.v      ;         ;
+; mux1bit.v                        ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux1bit.v    ;         ;
+; RCA_16.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/RCA_16.v     ;         ;
+; subtractor.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/subtractor.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 32      ;
-;                                             ;         ;
-; Total combinational functions               ; 32      ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 0       ;
-;     -- 3 input functions                    ; 32      ;
-;     -- <=2 input functions                  ; 0       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 32      ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 0       ;
-;     -- Dedicated logic registers            ; 0       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 97      ;
-;                                             ;         ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; s~input ;
-; Maximum fan-out                             ; 32      ;
-; Total fan-out                               ; 225     ;
-; Average fan-out                             ; 1.00    ;
-+---------------------------------------------+---------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 48           ;
+;                                             ;              ;
+; Total combinational functions               ; 48           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 30           ;
+;     -- 3 input functions                    ; 17           ;
+;     -- <=2 input functions                  ; 1            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 48           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 97           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; in2[0]~input ;
+; Maximum fan-out                             ; 47           ;
+; Total fan-out                               ; 303          ;
+; Average fan-out                             ; 1.25         ;
++---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |mux2_1                    ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 97   ; 0            ; |mux2_1             ; mux2_1      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-------------+--------------+
+; |subtractor                  ; 48 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 97   ; 0            ; |subtractor                                               ; subtractor  ; work         ;
+;    |adder:comb_35|           ; 48 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35                                 ; adder       ; work         ;
+;       |RCA_16:comb_3|        ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3                   ; RCA_16      ; work         ;
+;          |fulladder:comb_10| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_10 ; fulladder   ; work         ;
+;          |fulladder:comb_11| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_11 ; fulladder   ; work         ;
+;          |fulladder:comb_12| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_12 ; fulladder   ; work         ;
+;          |fulladder:comb_13| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_13 ; fulladder   ; work         ;
+;          |fulladder:comb_14| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_14 ; fulladder   ; work         ;
+;          |fulladder:comb_15| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_15 ; fulladder   ; work         ;
+;          |fulladder:comb_16| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_16 ; fulladder   ; work         ;
+;          |fulladder:comb_17| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_17 ; fulladder   ; work         ;
+;          |fulladder:comb_18| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_18 ; fulladder   ; work         ;
+;          |fulladder:comb_3|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_3  ; fulladder   ; work         ;
+;          |fulladder:comb_4|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_4  ; fulladder   ; work         ;
+;          |fulladder:comb_5|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_5  ; fulladder   ; work         ;
+;          |fulladder:comb_6|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_6  ; fulladder   ; work         ;
+;          |fulladder:comb_7|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_7  ; fulladder   ; work         ;
+;          |fulladder:comb_8|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_8  ; fulladder   ; work         ;
+;          |fulladder:comb_9|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|RCA_16:comb_3|fulladder:comb_9  ; fulladder   ; work         ;
+;       |mux1bit:comb_7|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|mux1bit:comb_7                  ; mux1bit     ; work         ;
+;       |mux2_1:comb_6|        ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |subtractor|adder:comb_35|mux2_1:comb_6                   ; mux2_1      ; work         ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,18 +256,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++---------------------------------------------------------+
+; Port Connectivity Checks: "adder:comb_35|RCA_16:comb_5" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "adder:comb_35|RCA_16:comb_4" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "adder:comb_35" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; cin  ; Input ; Info     ; Stuck at VCC    ;
++------+-------+----------+-----------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 97                          ;
-; cycloneiii_lcell_comb ; 32                          ;
-;     normal            ; 32                          ;
-;         3 data inputs ; 32                          ;
+; cycloneiii_lcell_comb ; 78                          ;
+;     normal            ; 78                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 30                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 17.00                       ;
+; Average LUT depth     ; 10.67                       ;
 +-----------------------+-----------------------------+
 
 
@@ -248,7 +306,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -258,7 +316,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Sep 15 16:06:04 2022
+    Info: Processing started: Sat Sep 17 11:11:16 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -266,28 +324,85 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.
     Info (12023): Found entity 1: mux2_1 File: C:/Users/ka266/Documents/Project1/mux2_1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
     Info (12023): Found entity 1: fulladder File: C:/Users/ka266/Documents/Project1/fulladder.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file rca_32.v
-    Info (12023): Found entity 1: RCA_32 File: C:/Users/ka266/Documents/Project1/RCA_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: adder File: C:/Users/ka266/Documents/Project1/adder.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at RCA_32.v(9): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_32.v Line: 9
-Critical Warning (10846): Verilog HDL Instantiation warning at RCA_32.v(14): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_32.v Line: 14
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(40): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 40
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(42): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 42
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(43): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 43
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(45): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 45
-Info (12127): Elaborating entity "mux2_1" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file mux1bit.v
+    Info (12023): Found entity 1: mux1bit File: C:/Users/ka266/Documents/Project1/mux1bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca_16.v
+    Info (12023): Found entity 1: RCA_16 File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subtractor.v
+    Info (12023): Found entity 1: subtractor File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/ka266/Documents/Project1/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_32bit.v
+    Info (12023): Found entity 1: mux2_1_32bit File: C:/Users/ka266/Documents/Project1/mux2_1_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4_2_32bit.v
+    Info (12023): Found entity 1: mux4_2_32bit File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at RCA_16.v(9): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at RCA_16.v(14): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at RCA_16.v(18): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(11): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(13): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(14): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(15): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(18): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at subtractor.v(15): instance has no name File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(14): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(15): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(17): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4_2_32bit.v(8): instance has no name File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4_2_32bit.v(9): instance has no name File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4_2_32bit.v(11): instance has no name File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 11
+Info (12127): Elaborating entity "subtractor" for the top level hierarchy
+Warning (10739): Verilog HDL warning at subtractor.v(11): actual bit length 32 differs from formal bit length 1 File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 11
+Info (12128): Elaborating entity "adder" for hierarchy "adder:comb_35" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 15
+Info (12128): Elaborating entity "RCA_16" for hierarchy "adder:comb_35|RCA_16:comb_3" File: C:/Users/ka266/Documents/Project1/adder.v Line: 11
+Info (12128): Elaborating entity "fulladder" for hierarchy "adder:comb_35|RCA_16:comb_3|fulladder:comb_3" File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 9
+Info (12128): Elaborating entity "mux2_1" for hierarchy "adder:comb_35|mux2_1:comb_6" File: C:/Users/ka266/Documents/Project1/adder.v Line: 15
+Info (12128): Elaborating entity "mux1bit" for hierarchy "adder:comb_35|mux1bit:comb_7" File: C:/Users/ka266/Documents/Project1/adder.v Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 129 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 65 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 32 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4730 megabytes
-    Info: Processing ended: Thu Sep 15 16:06:20 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:20
+Warning (21074): Design contains 31 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in2[1]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[2]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[3]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[4]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[5]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[6]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[7]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[8]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[9]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[10]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[11]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[12]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[13]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[14]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[15]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[16]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[17]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[18]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[19]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[20]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[21]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[22]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[23]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[24]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[25]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[26]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[27]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[28]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[29]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[30]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+    Warning (15610): No output dependent on input pin "in2[31]" File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 2
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 64 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 48 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
+    Info: Peak virtual memory: 4738 megabytes
+    Info: Processing ended: Sat Sep 17 11:11:31 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:21
 
 
