@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "alu")
-  (DATE "09/17/2022 12:24:38")
+  (DATE "09/17/2022 12:37:34")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition")
@@ -387,7 +387,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[0\]\~0)
+    (INSTANCE m1\|orgate\[0\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3426:3426:3426) (3681:3681:3681))
@@ -426,7 +426,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_4\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[1\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3177:3177:3177) (3431:3431:3431))
@@ -438,7 +438,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[1\]\~1)
+    (INSTANCE m1\|orgate\[1\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3475:3475:3475) (3726:3726:3726))
@@ -472,7 +472,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_5\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[2\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3142:3142:3142) (3400:3400:3400))
@@ -484,7 +484,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_4\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[1\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3178:3178:3178) (3432:3432:3432))
@@ -500,7 +500,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_4\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[1\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3176:3176:3176) (3430:3430:3430))
@@ -516,7 +516,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[2\]\~2)
+    (INSTANCE m1\|orgate\[2\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (460:460:460) (466:466:466))
@@ -532,7 +532,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_5\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[2\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3144:3144:3144) (3402:3402:3402))
@@ -546,7 +546,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_5\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[2\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3144:3144:3144) (3402:3402:3402))
@@ -578,7 +578,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_6\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[3\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3450:3450:3450) (3705:3705:3705))
@@ -590,7 +590,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[3\]\~3)
+    (INSTANCE m1\|orgate\[3\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (296:296:296))
@@ -606,7 +606,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_6\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[3\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (295:295:295))
@@ -620,7 +620,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_6\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[3\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3449:3449:3449) (3704:3704:3704))
@@ -652,7 +652,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_7\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[4\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3085:3085:3085) (3342:3342:3342))
@@ -664,7 +664,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[4\]\~4)
+    (INSTANCE m1\|orgate\[4\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (239:239:239) (281:281:281))
@@ -698,7 +698,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_8\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[5\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2786:2786:2786) (3062:3062:3062))
@@ -710,7 +710,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_6\|w2)
+    (INSTANCE s1\|a1\|r1\|fulladder\[3\]\.f1i\|a1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3143:3143:3143) (3401:3401:3401))
@@ -726,7 +726,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_6\|w3)
+    (INSTANCE s1\|a1\|r1\|fulladder\[3\]\.f1i\|a2)
     (DELAY
       (ABSOLUTE
         (PORT datab (3447:3447:3447) (3702:3702:3702))
@@ -738,7 +738,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_7\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[4\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3134:3134:3134) (3388:3388:3388))
@@ -754,7 +754,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_7\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[4\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3130:3130:3130) (3383:3383:3383))
@@ -768,7 +768,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[5\]\~5)
+    (INSTANCE m1\|orgate\[5\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (413:413:413) (427:427:427))
@@ -784,7 +784,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_8\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[5\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3158:3158:3158) (3408:3408:3408))
@@ -798,7 +798,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_8\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[5\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2787:2787:2787) (3063:3063:3063))
@@ -830,7 +830,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_9\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[6\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2783:2783:2783) (3060:3060:3060))
@@ -842,7 +842,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[6\]\~6)
+    (INSTANCE m1\|orgate\[6\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1103:1103:1103) (1103:1103:1103))
@@ -876,7 +876,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_10\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[7\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3472:3472:3472) (3723:3723:3723))
@@ -888,7 +888,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_9\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[6\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2781:2781:2781) (3058:3058:3058))
@@ -902,7 +902,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_9\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[6\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2783:2783:2783) (3061:3061:3061))
@@ -916,7 +916,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[7\]\~7)
+    (INSTANCE m1\|orgate\[7\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (242:242:242) (284:284:284))
@@ -932,7 +932,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_10\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[7\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3120:3120:3120) (3384:3384:3384))
@@ -946,7 +946,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_10\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[7\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3121:3121:3121) (3385:3385:3385))
@@ -978,7 +978,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_11\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[8\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (2742:2742:2742) (3007:3007:3007))
@@ -990,7 +990,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[8\]\~8)
+    (INSTANCE m1\|orgate\[8\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (294:294:294))
@@ -1024,7 +1024,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_12\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[9\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2786:2786:2786) (3063:3063:3063))
@@ -1036,7 +1036,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_11\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[8\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3181:3181:3181) (3435:3435:3435))
@@ -1050,7 +1050,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_11\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[8\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3179:3179:3179) (3433:3433:3433))
@@ -1064,7 +1064,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[9\]\~9)
+    (INSTANCE m1\|orgate\[9\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (242:242:242) (285:285:285))
@@ -1080,7 +1080,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_12\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[9\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2786:2786:2786) (3063:3063:3063))
@@ -1112,7 +1112,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_13\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[10\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2785:2785:2785) (3063:3063:3063))
@@ -1124,7 +1124,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_12\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[9\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2786:2786:2786) (3063:3063:3063))
@@ -1138,7 +1138,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[10\]\~10)
+    (INSTANCE m1\|orgate\[10\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1081:1081:1081) (1093:1093:1093))
@@ -1154,7 +1154,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_13\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[10\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2781:2781:2781) (3058:3058:3058))
@@ -1168,7 +1168,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_13\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[10\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2783:2783:2783) (3061:3061:3061))
@@ -1200,7 +1200,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_14\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[11\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3138:3138:3138) (3392:3392:3392))
@@ -1212,7 +1212,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[11\]\~11)
+    (INSTANCE m1\|orgate\[11\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (294:294:294))
@@ -1228,7 +1228,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_14\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[11\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3180:3180:3180) (3433:3433:3433))
@@ -1242,7 +1242,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_14\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[11\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3180:3180:3180) (3433:3433:3433))
@@ -1274,7 +1274,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_15\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[12\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3262:3262:3262) (3512:3512:3512))
@@ -1286,7 +1286,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[12\]\~12)
+    (INSTANCE m1\|orgate\[12\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2720:2720:2720) (2665:2665:2665))
@@ -1320,7 +1320,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_16\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[13\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3358:3358:3358) (3631:3631:3631))
@@ -1332,7 +1332,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_15\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[12\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2720:2720:2720) (2666:2666:2666))
@@ -1346,7 +1346,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_15\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[12\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT datab (3263:3263:3263) (3513:3513:3513))
@@ -1360,7 +1360,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[13\]\~13)
+    (INSTANCE m1\|orgate\[13\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3719:3719:3719) (4008:4008:4008))
@@ -1376,7 +1376,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_16\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[13\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3357:3357:3357) (3630:3630:3630))
@@ -1408,7 +1408,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_17\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fulladder\[14\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3588:3588:3588) (3809:3809:3809))
@@ -1420,7 +1420,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_16\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[13\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3365:3365:3365) (3636:3636:3636))
@@ -1434,7 +1434,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[14\]\~14)
+    (INSTANCE m1\|orgate\[14\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3724:3724:3724) (4014:4014:4014))
@@ -1450,7 +1450,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_17\|cout\~0)
+    (INSTANCE a1\|r1\|fulladder\[14\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3588:3588:3588) (3810:3810:3810))
@@ -1482,7 +1482,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_18\|w1\~0)
+    (INSTANCE s1\|a1\|r1\|fal\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3636:3636:3636) (3869:3869:3869))
@@ -1494,7 +1494,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_17\|cout)
+    (INSTANCE s1\|a1\|r1\|fulladder\[14\]\.f1i\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3591:3591:3591) (3813:3813:3813))
@@ -1508,7 +1508,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[15\]\~15)
+    (INSTANCE m1\|orgate\[15\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1302:1302:1302) (1335:1335:1335))
@@ -1542,7 +1542,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[0\]\~0)
+    (INSTANCE s1\|a1\|m1\|orgate\[0\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3607:3607:3607) (3833:3833:3833))
@@ -1554,7 +1554,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_3\|comb_18\|cout)
+    (INSTANCE s1\|a1\|r1\|fal\|o1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3637:3637:3637) (3870:3870:3870))
@@ -1568,7 +1568,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_3\|comb_18\|cout\~0)
+    (INSTANCE a1\|r1\|fal\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3637:3637:3637) (3870:3870:3870))
@@ -1582,7 +1582,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[16\]\~16)
+    (INSTANCE m1\|orgate\[16\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (239:239:239) (281:281:281))
@@ -1616,7 +1616,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_4\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[1\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3338:3338:3338) (3573:3573:3573))
@@ -1628,7 +1628,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[17\]\~17)
+    (INSTANCE m1\|orgate\[17\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (293:293:293))
@@ -1644,7 +1644,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[1\]\~1)
+    (INSTANCE s1\|a1\|m1\|orgate\[1\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3396:3396:3396) (3634:3634:3634))
@@ -1658,7 +1658,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[17\]\~18)
+    (INSTANCE m1\|orgate\[17\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3720:3720:3720) (4009:4009:4009))
@@ -1692,7 +1692,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_5\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[2\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3346:3346:3346) (3574:3574:3574))
@@ -1704,7 +1704,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_4\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[1\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3297:3297:3297) (3535:3535:3535))
@@ -1720,7 +1720,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_4\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[1\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3299:3299:3299) (3538:3538:3538))
@@ -1736,7 +1736,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[18\]\~19)
+    (INSTANCE m1\|orgate\[18\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (739:739:739) (730:730:730))
@@ -1752,7 +1752,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[2\]\~2)
+    (INSTANCE s1\|a1\|m1\|orgate\[2\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3337:3337:3337) (3572:3572:3572))
@@ -1766,7 +1766,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[18\]\~20)
+    (INSTANCE m1\|orgate\[18\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (241:241:241) (283:283:283))
@@ -1800,7 +1800,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_6\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[3\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3332:3332:3332) (3576:3576:3576))
@@ -1812,7 +1812,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_5\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[2\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3361:3361:3361) (3605:3605:3605))
@@ -1826,7 +1826,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_5\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[2\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (434:434:434) (445:445:445))
@@ -1840,7 +1840,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[19\]\~21)
+    (INSTANCE m1\|orgate\[19\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (296:296:296))
@@ -1856,7 +1856,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[3\]\~3)
+    (INSTANCE s1\|a1\|m1\|orgate\[3\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (473:473:473) (475:475:475))
@@ -1870,7 +1870,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[19\]\~22)
+    (INSTANCE m1\|orgate\[19\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (250:250:250) (297:297:297))
@@ -1886,7 +1886,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_6\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[3\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (293:293:293))
@@ -1918,7 +1918,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_7\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[4\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3645:3645:3645) (3878:3878:3878))
@@ -1930,7 +1930,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_6\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[3\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3333:3333:3333) (3577:3577:3577))
@@ -1944,7 +1944,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[20\]\~23)
+    (INSTANCE m1\|orgate\[20\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (682:682:682) (677:677:677))
@@ -1960,7 +1960,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_5\|w3)
+    (INSTANCE s1\|a1\|r2\|fulladder\[2\]\.f1i\|a2)
     (DELAY
       (ABSOLUTE
         (PORT datab (3117:3117:3117) (3379:3379:3379))
@@ -1972,7 +1972,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[3\]\~4)
+    (INSTANCE s1\|a1\|m1\|orgate\[3\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (742:742:742) (735:735:735))
@@ -1988,7 +1988,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[4\]\~5)
+    (INSTANCE s1\|a1\|m1\|orgate\[4\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3298:3298:3298) (3540:3540:3540))
@@ -2004,7 +2004,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[20\]\~24)
+    (INSTANCE m1\|orgate\[20\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (244:244:244) (287:287:287))
@@ -2038,7 +2038,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_8\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[5\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3019:3019:3019) (3284:3284:3284))
@@ -2050,7 +2050,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[5\]\~6)
+    (INSTANCE s1\|a1\|m1\|orgate\[5\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3685:3685:3685) (3903:3903:3903))
@@ -2064,7 +2064,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_7\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[4\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3646:3646:3646) (3879:3879:3879))
@@ -2078,7 +2078,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_7\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[4\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3645:3645:3645) (3878:3878:3878))
@@ -2092,7 +2092,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[21\]\~25)
+    (INSTANCE m1\|orgate\[21\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (750:750:750) (746:746:746))
@@ -2108,7 +2108,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[21\]\~26)
+    (INSTANCE m1\|orgate\[21\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (295:295:295))
@@ -2142,7 +2142,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_9\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[6\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3038:3038:3038) (3308:3308:3308))
@@ -2154,7 +2154,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_8\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[5\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (696:696:696) (695:695:695))
@@ -2168,7 +2168,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_8\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[5\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (740:740:740) (723:723:723))
@@ -2182,7 +2182,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[22\]\~27)
+    (INSTANCE m1\|orgate\[22\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (250:250:250) (297:297:297))
@@ -2198,7 +2198,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[6\]\~7)
+    (INSTANCE s1\|a1\|m1\|orgate\[6\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3056:3056:3056) (3328:3328:3328))
@@ -2212,7 +2212,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[22\]\~28)
+    (INSTANCE m1\|orgate\[22\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (293:293:293))
@@ -2246,7 +2246,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_10\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[7\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3839:3839:3839) (4092:4092:4092))
@@ -2258,7 +2258,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_9\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[6\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (246:246:246) (286:286:286))
@@ -2272,7 +2272,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_9\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[6\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (246:246:246) (293:293:293))
@@ -2286,7 +2286,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[23\]\~29)
+    (INSTANCE m1\|orgate\[23\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (264:264:264) (306:306:306))
@@ -2302,7 +2302,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[7\]\~8)
+    (INSTANCE s1\|a1\|m1\|orgate\[7\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (247:247:247) (285:285:285))
@@ -2316,7 +2316,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[23\]\~30)
+    (INSTANCE m1\|orgate\[23\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1961:1961:1961) (1889:1889:1889))
@@ -2350,7 +2350,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_11\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[8\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3602:3602:3602) (3857:3857:3857))
@@ -2362,7 +2362,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_10\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[7\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3837:3837:3837) (4090:4090:4090))
@@ -2376,7 +2376,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_10\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[7\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3838:3838:3838) (4091:4091:4091))
@@ -2390,7 +2390,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[24\]\~31)
+    (INSTANCE m1\|orgate\[24\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2277:2277:2277) (2163:2163:2163))
@@ -2406,7 +2406,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[8\]\~9)
+    (INSTANCE s1\|a1\|m1\|orgate\[8\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3838:3838:3838) (4092:4092:4092))
@@ -2420,7 +2420,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[24\]\~32)
+    (INSTANCE m1\|orgate\[24\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (294:294:294))
@@ -2436,7 +2436,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_11\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[8\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3600:3600:3600) (3854:3854:3854))
@@ -2450,7 +2450,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_11\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[8\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3649:3649:3649) (3896:3896:3896))
@@ -2482,7 +2482,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_12\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[9\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3429:3429:3429) (3697:3697:3697))
@@ -2494,7 +2494,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[25\]\~33)
+    (INSTANCE m1\|orgate\[25\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2278:2278:2278) (2164:2164:2164))
@@ -2510,7 +2510,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[9\]\~10)
+    (INSTANCE s1\|a1\|m1\|orgate\[9\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3653:3653:3653) (3901:3901:3901))
@@ -2524,7 +2524,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[25\]\~34)
+    (INSTANCE m1\|orgate\[25\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (239:239:239) (281:281:281))
@@ -2540,7 +2540,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_12\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[9\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3423:3423:3423) (3691:3691:3691))
@@ -2572,7 +2572,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_13\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[10\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3021:3021:3021) (3286:3286:3286))
@@ -2584,7 +2584,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_12\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[9\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3428:3428:3428) (3696:3696:3696))
@@ -2598,7 +2598,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[26\]\~35)
+    (INSTANCE m1\|orgate\[26\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2287:2287:2287) (2177:2177:2177))
@@ -2614,7 +2614,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[10\]\~11)
+    (INSTANCE s1\|a1\|m1\|orgate\[10\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (294:294:294))
@@ -2628,7 +2628,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[26\]\~36)
+    (INSTANCE m1\|orgate\[26\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (240:240:240) (282:282:282))
@@ -2644,7 +2644,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_13\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[10\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (468:468:468) (477:477:477))
@@ -2676,7 +2676,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_14\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[11\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3106:3106:3106) (3383:3383:3383))
@@ -2688,7 +2688,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_13\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[10\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (461:461:461) (468:468:468))
@@ -2702,7 +2702,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[27\]\~37)
+    (INSTANCE m1\|orgate\[27\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2287:2287:2287) (2177:2177:2177))
@@ -2718,7 +2718,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[11\]\~12)
+    (INSTANCE s1\|a1\|m1\|orgate\[11\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (460:460:460) (466:466:466))
@@ -2732,7 +2732,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[27\]\~38)
+    (INSTANCE m1\|orgate\[27\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (240:240:240) (282:282:282))
@@ -2766,7 +2766,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_15\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[12\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3075:3075:3075) (3339:3339:3339))
@@ -2778,7 +2778,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_14\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[11\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (249:249:249) (290:290:290))
@@ -2792,7 +2792,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_14\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[11\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (250:250:250) (295:295:295))
@@ -2806,7 +2806,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[28\]\~39)
+    (INSTANCE m1\|orgate\[28\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2286:2286:2286) (2175:2175:2175))
@@ -2822,7 +2822,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[12\]\~13)
+    (INSTANCE s1\|a1\|m1\|orgate\[12\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (294:294:294))
@@ -2836,7 +2836,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[28\]\~40)
+    (INSTANCE m1\|orgate\[28\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (240:240:240) (282:282:282))
@@ -2870,7 +2870,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_16\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[13\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3334:3334:3334) (3568:3568:3568))
@@ -2882,7 +2882,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[13\]\~14)
+    (INSTANCE s1\|a1\|m1\|orgate\[13\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (666:666:666) (669:669:669))
@@ -2896,7 +2896,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_15\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[12\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (678:678:678) (676:676:676))
@@ -2910,7 +2910,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_15\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[12\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3079:3079:3079) (3342:3342:3342))
@@ -2924,7 +2924,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[29\]\~41)
+    (INSTANCE m1\|orgate\[29\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (248:248:248) (294:294:294))
@@ -2940,7 +2940,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[29\]\~42)
+    (INSTANCE m1\|orgate\[29\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (4076:4076:4076) (4393:4393:4393))
@@ -2974,7 +2974,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_4\|comb_17\|w1\~0)
+    (INSTANCE s1\|a1\|r2\|fulladder\[14\]\.f1i\|x1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (3259:3259:3259) (3509:3509:3509))
@@ -2986,7 +2986,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_16\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[13\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3333:3333:3333) (3568:3568:3568))
@@ -3000,7 +3000,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_16\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[13\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (296:296:296))
@@ -3014,7 +3014,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[30\]\~43)
+    (INSTANCE m1\|orgate\[30\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (296:296:296))
@@ -3030,7 +3030,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[14\]\~15)
+    (INSTANCE s1\|a1\|m1\|orgate\[14\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3335:3335:3335) (3570:3570:3570))
@@ -3044,7 +3044,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[30\]\~44)
+    (INSTANCE m1\|orgate\[30\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (4075:4075:4075) (4392:4392:4392))
@@ -3078,7 +3078,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_18\|out\~0)
+    (INSTANCE a1\|r3\|fal\|x2\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3619:3619:3619) (3835:3835:3835))
@@ -3090,7 +3090,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_5\|comb_17\|cout\~0)
+    (INSTANCE a1\|r3\|fulladder\[14\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (247:247:247) (285:285:285))
@@ -3104,7 +3104,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_3\|comb_4\|comb_17\|cout\~0)
+    (INSTANCE a1\|r2\|fulladder\[14\]\.f1i\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (296:296:296))
@@ -3118,7 +3118,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[31\]\~45)
+    (INSTANCE m1\|orgate\[31\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (997:997:997) (966:966:966))
@@ -3134,7 +3134,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_4\|comb_35\|comb_6\|out\[15\]\~16)
+    (INSTANCE s1\|a1\|m1\|orgate\[15\]\.ok\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (250:250:250) (294:294:294))
@@ -3148,7 +3148,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_5\|out\[31\]\~46)
+    (INSTANCE m1\|orgate\[31\]\.ok\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3722:3722:3722) (4012:4012:4012))
@@ -3164,7 +3164,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_6\|out\~0)
+    (INSTANCE m2\|o1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (249:249:249) (295:295:295))
@@ -3178,7 +3178,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_6\|out\~1)
+    (INSTANCE m2\|o1\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3722:3722:3722) (4012:4012:4012))
@@ -3192,7 +3192,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE comb_6\|out\~2)
+    (INSTANCE m2\|o1\~2)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3718:3718:3718) (4007:4007:4007))

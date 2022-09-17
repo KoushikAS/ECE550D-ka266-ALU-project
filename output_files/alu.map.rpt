@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu
-Sat Sep 17 12:24:09 2022
+Sat Sep 17 12:37:04 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,12 +15,12 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "subtractor:comb_4|adder:comb_35"
- 11. Port Connectivity Checks: "subtractor:comb_4"
- 12. Port Connectivity Checks: "adder:comb_3|RCA_16:comb_5"
- 13. Port Connectivity Checks: "adder:comb_3|RCA_16:comb_4"
- 14. Port Connectivity Checks: "adder:comb_3|RCA_16:comb_3"
- 15. Port Connectivity Checks: "adder:comb_3"
+ 10. Port Connectivity Checks: "subtractor:s1|adder:a1"
+ 11. Port Connectivity Checks: "subtractor:s1"
+ 12. Port Connectivity Checks: "adder:a1|RCA_16:r3"
+ 13. Port Connectivity Checks: "adder:a1|RCA_16:r2"
+ 14. Port Connectivity Checks: "adder:a1|RCA_16:r1"
+ 15. Port Connectivity Checks: "adder:a1"
  16. Post-Synthesis Netlist Statistics for Top Partition
  17. Elapsed Time Per Partition
  18. Analysis & Synthesis Messages
@@ -50,7 +50,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 17 12:24:09 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 17 12:37:04 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
 ; Top-level Entity Name              ; alu                                         ;
@@ -217,97 +217,97 @@ agreement for further details.
 +---------------------------------------------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name  ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
-; |alu                            ; 158 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                                 ; alu          ; work         ;
-;    |adder:comb_3|               ; 44 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3                                                    ; adder        ; work         ;
-;       |RCA_16:comb_3|           ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3                                      ; RCA_16       ; work         ;
-;          |fulladder:comb_10|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_10                    ; fulladder    ; work         ;
-;          |fulladder:comb_11|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_11                    ; fulladder    ; work         ;
-;          |fulladder:comb_12|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_12                    ; fulladder    ; work         ;
-;          |fulladder:comb_13|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_13                    ; fulladder    ; work         ;
-;          |fulladder:comb_14|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_14                    ; fulladder    ; work         ;
-;          |fulladder:comb_15|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_15                    ; fulladder    ; work         ;
-;          |fulladder:comb_16|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_16                    ; fulladder    ; work         ;
-;          |fulladder:comb_17|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_17                    ; fulladder    ; work         ;
-;          |fulladder:comb_18|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_18                    ; fulladder    ; work         ;
-;          |fulladder:comb_4|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_4                     ; fulladder    ; work         ;
-;          |fulladder:comb_5|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_5                     ; fulladder    ; work         ;
-;          |fulladder:comb_6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_6                     ; fulladder    ; work         ;
-;          |fulladder:comb_7|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_7                     ; fulladder    ; work         ;
-;          |fulladder:comb_8|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_8                     ; fulladder    ; work         ;
-;          |fulladder:comb_9|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_3|fulladder:comb_9                     ; fulladder    ; work         ;
-;       |RCA_16:comb_4|           ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4                                      ; RCA_16       ; work         ;
-;          |fulladder:comb_10|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_10                    ; fulladder    ; work         ;
-;          |fulladder:comb_11|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_11                    ; fulladder    ; work         ;
-;          |fulladder:comb_12|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_12                    ; fulladder    ; work         ;
-;          |fulladder:comb_13|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_13                    ; fulladder    ; work         ;
-;          |fulladder:comb_14|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_14                    ; fulladder    ; work         ;
-;          |fulladder:comb_15|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_15                    ; fulladder    ; work         ;
-;          |fulladder:comb_16|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_16                    ; fulladder    ; work         ;
-;          |fulladder:comb_17|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_17                    ; fulladder    ; work         ;
-;          |fulladder:comb_4|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_4                     ; fulladder    ; work         ;
-;          |fulladder:comb_5|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_5                     ; fulladder    ; work         ;
-;          |fulladder:comb_6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_6                     ; fulladder    ; work         ;
-;          |fulladder:comb_7|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_7                     ; fulladder    ; work         ;
-;          |fulladder:comb_8|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_8                     ; fulladder    ; work         ;
-;          |fulladder:comb_9|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_4|fulladder:comb_9                     ; fulladder    ; work         ;
-;       |RCA_16:comb_5|           ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5                                      ; RCA_16       ; work         ;
-;          |fulladder:comb_10|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_10                    ; fulladder    ; work         ;
-;          |fulladder:comb_11|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_11                    ; fulladder    ; work         ;
-;          |fulladder:comb_12|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_12                    ; fulladder    ; work         ;
-;          |fulladder:comb_13|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_13                    ; fulladder    ; work         ;
-;          |fulladder:comb_14|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_14                    ; fulladder    ; work         ;
-;          |fulladder:comb_15|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_15                    ; fulladder    ; work         ;
-;          |fulladder:comb_16|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_16                    ; fulladder    ; work         ;
-;          |fulladder:comb_17|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_17                    ; fulladder    ; work         ;
-;          |fulladder:comb_18|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_18                    ; fulladder    ; work         ;
-;          |fulladder:comb_4|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_4                     ; fulladder    ; work         ;
-;          |fulladder:comb_5|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_5                     ; fulladder    ; work         ;
-;          |fulladder:comb_6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_6                     ; fulladder    ; work         ;
-;          |fulladder:comb_7|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_7                     ; fulladder    ; work         ;
-;          |fulladder:comb_8|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_8                     ; fulladder    ; work         ;
-;          |fulladder:comb_9|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:comb_3|RCA_16:comb_5|fulladder:comb_9                     ; fulladder    ; work         ;
-;    |mux1bit:comb_6|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux1bit:comb_6                                                  ; mux1bit      ; work         ;
-;    |mux2_1_32bit:comb_5|        ; 47 (47)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux2_1_32bit:comb_5                                             ; mux2_1_32bit ; work         ;
-;    |subtractor:comb_4|          ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4                                               ; subtractor   ; work         ;
-;       |adder:comb_35|           ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35                                 ; adder        ; work         ;
-;          |RCA_16:comb_3|        ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3                   ; RCA_16       ; work         ;
-;             |fulladder:comb_10| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_10 ; fulladder    ; work         ;
-;             |fulladder:comb_11| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_11 ; fulladder    ; work         ;
-;             |fulladder:comb_12| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_12 ; fulladder    ; work         ;
-;             |fulladder:comb_13| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_13 ; fulladder    ; work         ;
-;             |fulladder:comb_14| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_14 ; fulladder    ; work         ;
-;             |fulladder:comb_15| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_15 ; fulladder    ; work         ;
-;             |fulladder:comb_16| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_16 ; fulladder    ; work         ;
-;             |fulladder:comb_17| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_17 ; fulladder    ; work         ;
-;             |fulladder:comb_18| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_18 ; fulladder    ; work         ;
-;             |fulladder:comb_4|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_4  ; fulladder    ; work         ;
-;             |fulladder:comb_5|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_5  ; fulladder    ; work         ;
-;             |fulladder:comb_6|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_6  ; fulladder    ; work         ;
-;             |fulladder:comb_7|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_7  ; fulladder    ; work         ;
-;             |fulladder:comb_8|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_8  ; fulladder    ; work         ;
-;             |fulladder:comb_9|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_3|fulladder:comb_9  ; fulladder    ; work         ;
-;          |RCA_16:comb_4|        ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4                   ; RCA_16       ; work         ;
-;             |fulladder:comb_10| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_10 ; fulladder    ; work         ;
-;             |fulladder:comb_11| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_11 ; fulladder    ; work         ;
-;             |fulladder:comb_12| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_12 ; fulladder    ; work         ;
-;             |fulladder:comb_13| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_13 ; fulladder    ; work         ;
-;             |fulladder:comb_14| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_14 ; fulladder    ; work         ;
-;             |fulladder:comb_15| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_15 ; fulladder    ; work         ;
-;             |fulladder:comb_16| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_16 ; fulladder    ; work         ;
-;             |fulladder:comb_17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_17 ; fulladder    ; work         ;
-;             |fulladder:comb_4|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_4  ; fulladder    ; work         ;
-;             |fulladder:comb_5|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_5  ; fulladder    ; work         ;
-;             |fulladder:comb_6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_6  ; fulladder    ; work         ;
-;             |fulladder:comb_7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_7  ; fulladder    ; work         ;
-;             |fulladder:comb_8|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_8  ; fulladder    ; work         ;
-;             |fulladder:comb_9|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|RCA_16:comb_4|fulladder:comb_9  ; fulladder    ; work         ;
-;          |mux2_1:comb_6|        ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:comb_4|adder:comb_35|mux2_1:comb_6                   ; mux2_1       ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name  ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+--------------+
+; |alu                                      ; 158 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                              ; alu          ; work         ;
+;    |adder:a1|                             ; 44 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1                                                     ; adder        ; work         ;
+;       |RCA_16:r1|                         ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1                                           ; RCA_16       ; work         ;
+;          |fulladder:fal|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fal                             ; fulladder    ; work         ;
+;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[10].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[11].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[12].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[13].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[14].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[1].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[2].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[3].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[3].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[4].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[4].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[5].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[6].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[6].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[7].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[8].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r1|fulladder:fulladder[9].f1i                ; fulladder    ; work         ;
+;       |RCA_16:r2|                         ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2                                           ; RCA_16       ; work         ;
+;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[10].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[11].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[12].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[13].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[14].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[1].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[2].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[3].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[3].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[4].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[4].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[5].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[6].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[6].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[7].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[8].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r2|fulladder:fulladder[9].f1i                ; fulladder    ; work         ;
+;       |RCA_16:r3|                         ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3                                           ; RCA_16       ; work         ;
+;          |fulladder:fal|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fal                             ; fulladder    ; work         ;
+;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[10].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[11].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[12].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[13].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[14].f1i               ; fulladder    ; work         ;
+;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[1].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[2].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[3].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[3].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[4].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[4].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[5].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[6].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[6].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[7].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[8].f1i                ; fulladder    ; work         ;
+;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:a1|RCA_16:r3|fulladder:fulladder[9].f1i                ; fulladder    ; work         ;
+;    |mux1bit:m2|                           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux1bit:m2                                                   ; mux1bit      ; work         ;
+;    |mux2_1_32bit:m1|                      ; 47 (47)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux2_1_32bit:m1                                              ; mux2_1_32bit ; work         ;
+;    |subtractor:s1|                        ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1                                                ; subtractor   ; work         ;
+;       |adder:a1|                          ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1                                       ; adder        ; work         ;
+;          |RCA_16:r1|                      ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1                             ; RCA_16       ; work         ;
+;             |fulladder:fal|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fal               ; fulladder    ; work         ;
+;             |fulladder:fulladder[10].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[10].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[11].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[11].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[12].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[12].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[13].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[13].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[14].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[14].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[1].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[1].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[2].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[2].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[3].f1i|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[3].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[4].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[4].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[5].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[5].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[6].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[6].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[7].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[7].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[8].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[8].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[9].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r1|fulladder:fulladder[9].f1i  ; fulladder    ; work         ;
+;          |RCA_16:r2|                      ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2                             ; RCA_16       ; work         ;
+;             |fulladder:fulladder[10].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[10].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[11].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[11].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[12].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[12].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[13].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[13].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[14].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[14].f1i ; fulladder    ; work         ;
+;             |fulladder:fulladder[1].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[1].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[2].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[2].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[3].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[3].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[4].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[4].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[5].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[5].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[6].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[6].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[7].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[7].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[8].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[8].f1i  ; fulladder    ; work         ;
+;             |fulladder:fulladder[9].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|RCA_16:r2|fulladder:fulladder[9].f1i  ; fulladder    ; work         ;
+;          |mux2_1:m1|                      ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:s1|adder:a1|mux2_1:m1                             ; mux2_1       ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -326,26 +326,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |alu|mux2_1_32bit:comb_5|out[17] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |alu|mux2_1_32bit:m1|orgate[17].ok ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "subtractor:comb_4|adder:comb_35" ;
-+------+-------+----------+-----------------------------------+
-; Port ; Type  ; Severity ; Details                           ;
-+------+-------+----------+-----------------------------------+
-; cin  ; Input ; Info     ; Stuck at VCC                      ;
-+------+-------+----------+-----------------------------------+
++----------------------------------------------------+
+; Port Connectivity Checks: "subtractor:s1|adder:a1" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC             ;
++------+-------+----------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "subtractor:comb_4"                                                                  ;
+; Port Connectivity Checks: "subtractor:s1"                                                                      ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -353,26 +353,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------+
-; Port Connectivity Checks: "adder:comb_3|RCA_16:comb_5" ;
-+------+-------+----------+------------------------------+
-; Port ; Type  ; Severity ; Details                      ;
-+------+-------+----------+------------------------------+
-; cin  ; Input ; Info     ; Stuck at VCC                 ;
-+------+-------+----------+------------------------------+
++------------------------------------------------+
+; Port Connectivity Checks: "adder:a1|RCA_16:r3" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; cin  ; Input ; Info     ; Stuck at VCC         ;
++------+-------+----------+----------------------+
 
 
-+--------------------------------------------------------+
-; Port Connectivity Checks: "adder:comb_3|RCA_16:comb_4" ;
-+------+-------+----------+------------------------------+
-; Port ; Type  ; Severity ; Details                      ;
-+------+-------+----------+------------------------------+
-; cin  ; Input ; Info     ; Stuck at GND                 ;
-+------+-------+----------+------------------------------+
++------------------------------------------------+
+; Port Connectivity Checks: "adder:a1|RCA_16:r2" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; cin  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder:comb_3|RCA_16:comb_3"                                                             ;
+; Port Connectivity Checks: "adder:a1|RCA_16:r1"                                                                     ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -381,7 +381,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder:comb_3"                                                                       ;
+; Port Connectivity Checks: "adder:a1"                                                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -423,7 +423,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Sep 17 12:23:55 2022
+    Info: Processing started: Sat Sep 17 12:36:49 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -445,33 +445,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_
     Info (12023): Found entity 1: mux2_1_32bit File: C:/Users/ka266/Documents/Project1/mux2_1_32bit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_2_32bit.v
     Info (12023): Found entity 1: mux4_2_32bit File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at RCA_16.v(9): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 9
-Critical Warning (10846): Verilog HDL Instantiation warning at RCA_16.v(14): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 14
-Critical Warning (10846): Verilog HDL Instantiation warning at RCA_16.v(18): instance has no name File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 18
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(11): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 11
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(13): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 13
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(14): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 14
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(15): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 15
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(18): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 18
-Critical Warning (10846): Verilog HDL Instantiation warning at adder.v(19): instance has no name File: C:/Users/ka266/Documents/Project1/adder.v Line: 19
-Critical Warning (10846): Verilog HDL Instantiation warning at subtractor.v(15): instance has no name File: C:/Users/ka266/Documents/Project1/subtractor.v Line: 15
-Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(15): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 15
-Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(16): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 16
-Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(18): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 18
-Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(19): instance has no name File: C:/Users/ka266/Documents/Project1/alu.v Line: 19
-Critical Warning (10846): Verilog HDL Instantiation warning at mux4_2_32bit.v(8): instance has no name File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at mux4_2_32bit.v(9): instance has no name File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 9
-Critical Warning (10846): Verilog HDL Instantiation warning at mux4_2_32bit.v(11): instance has no name File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
+    Info (12023): Found entity 1: alu_tb File: C:/Users/ka266/Documents/Project1/alu_tb.v Line: 3
 Info (12127): Elaborating entity "alu" for the top level hierarchy
 Warning (10034): Output port "isNotEqual" at alu.v(7) has no driver File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
 Warning (10034): Output port "isLessThan" at alu.v(7) has no driver File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
-Info (12128): Elaborating entity "adder" for hierarchy "adder:comb_3" File: C:/Users/ka266/Documents/Project1/alu.v Line: 15
-Info (12128): Elaborating entity "RCA_16" for hierarchy "adder:comb_3|RCA_16:comb_3" File: C:/Users/ka266/Documents/Project1/adder.v Line: 11
-Info (12128): Elaborating entity "fulladder" for hierarchy "adder:comb_3|RCA_16:comb_3|fulladder:comb_3" File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 9
-Info (12128): Elaborating entity "mux2_1" for hierarchy "adder:comb_3|mux2_1:comb_6" File: C:/Users/ka266/Documents/Project1/adder.v Line: 15
-Info (12128): Elaborating entity "mux1bit" for hierarchy "adder:comb_3|mux1bit:comb_7" File: C:/Users/ka266/Documents/Project1/adder.v Line: 18
-Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:comb_4" File: C:/Users/ka266/Documents/Project1/alu.v Line: 16
-Info (12128): Elaborating entity "mux2_1_32bit" for hierarchy "mux2_1_32bit:comb_5" File: C:/Users/ka266/Documents/Project1/alu.v Line: 18
+Info (12128): Elaborating entity "adder" for hierarchy "adder:a1" File: C:/Users/ka266/Documents/Project1/alu.v Line: 15
+Info (12128): Elaborating entity "RCA_16" for hierarchy "adder:a1|RCA_16:r1" File: C:/Users/ka266/Documents/Project1/adder.v Line: 11
+Info (12128): Elaborating entity "fulladder" for hierarchy "adder:a1|RCA_16:r1|fulladder:fa1" File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 9
+Info (12128): Elaborating entity "mux2_1" for hierarchy "adder:a1|mux2_1:m1" File: C:/Users/ka266/Documents/Project1/adder.v Line: 15
+Info (12128): Elaborating entity "mux1bit" for hierarchy "adder:a1|mux1bit:m2" File: C:/Users/ka266/Documents/Project1/adder.v Line: 18
+Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:s1" File: C:/Users/ka266/Documents/Project1/alu.v Line: 16
+Info (12128): Elaborating entity "mux2_1_32bit" for hierarchy "mux2_1_32bit:m1" File: C:/Users/ka266/Documents/Project1/alu.v Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
     Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
@@ -492,10 +477,10 @@ Info (21057): Implemented 267 device resources after synthesis - the final resou
     Info (21058): Implemented 74 input pins
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 158 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 4732 megabytes
-    Info: Processing ended: Sat Sep 17 12:24:10 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4733 megabytes
+    Info: Processing ended: Sat Sep 17 12:37:05 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:22
 
 

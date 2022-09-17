@@ -5,9 +5,9 @@ module mux4_2_32bit(out, s, in0, in1,in2,in3);
 	
 	wire[31:0] w1,w2;
 	
-	mux2_1_32bit m1 (s[0], w1, in0,in1);
-	mux2_1_32bit m2 (s[0], w2, in2,in3);
+	mux2_1_32bit(s[0], w1, in0,in1);
+	mux2_1_32bit(s[0], w2, in2,in3);
 	
-	mux2_1_32bit m3 (s[1], out, w1, w2);
+	mux2_1_32bit(s[1], out, w1, w2);
 	
 endmodule 

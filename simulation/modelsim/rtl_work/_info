@@ -1,0 +1,209 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ka266/Documents/Project1/simulation/modelsim
+vadder
+Z1 !s110 1663432675
+!i10b 1
+!s100 ^OM3;[_LTCD9K]<iQ>D_22
+IP5:EnocFIQ89HeX_aGDJ90
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1663432524
+8C:/Users/ka266/Documents/Project1/adder.v
+FC:/Users/ka266/Documents/Project1/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1663432675.000000
+!s107 C:/Users/ka266/Documents/Project1/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/adder.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1
+Z7 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 Q=mbFiU5gJ6H?G2:5a?=d0
+I0j<]4Q8_jibcec[>JT2?W3
+R2
+R0
+w1663432584
+8C:/Users/ka266/Documents/Project1/alu.v
+FC:/Users/ka266/Documents/Project1/alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/alu.v|
+!i113 1
+R5
+R6
+R7
+valu_tb
+R1
+!i10b 1
+!s100 _VBMEf4SJmm`BE`nXKY=C0
+IKkH`Ilgb:V1H?7nYji5Xg1
+R2
+R0
+w1663432286
+8C:/Users/ka266/Documents/Project1/alu_tb.v
+FC:/Users/ka266/Documents/Project1/alu_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/alu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/alu_tb.v|
+!i113 1
+R5
+R6
+R7
+vfulladder
+R1
+!i10b 1
+!s100 aJ59D8CTNKkN8k<fGZj[D1
+IeCzn>T0fiin3UC;Q3L<a[0
+R2
+R0
+w1663432504
+8C:/Users/ka266/Documents/Project1/fulladder.v
+FC:/Users/ka266/Documents/Project1/fulladder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/fulladder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/fulladder.v|
+!i113 1
+R5
+R6
+R7
+vmux1bit
+R1
+!i10b 1
+!s100 ]gU8aKIIbaC@PP`HHf[Ul0
+IMTJgfV`KO<d=SDFSOE:UO0
+R2
+R0
+w1663432538
+8C:/Users/ka266/Documents/Project1/mux1bit.v
+FC:/Users/ka266/Documents/Project1/mux1bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/mux1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/mux1bit.v|
+!i113 1
+R5
+R6
+R7
+vmux2_1
+!s110 1663432674
+!i10b 1
+!s100 2D_KNCK@5BDg3l]8GfGYU3
+IKH1PHYZhoJDMQ<^iYb7AH0
+R2
+R0
+w1663432477
+8C:/Users/ka266/Documents/Project1/mux2_1.v
+FC:/Users/ka266/Documents/Project1/mux2_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1663432674.000000
+!s107 C:/Users/ka266/Documents/Project1/mux2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/mux2_1.v|
+!i113 1
+R5
+R6
+R7
+vmux2_1_32bit
+R1
+!i10b 1
+!s100 fO64<6KmKeoEkDF<[GzCL2
+IdI?e9X15Mja1j643A]i3@3
+R2
+R0
+w1663432596
+8C:/Users/ka266/Documents/Project1/mux2_1_32bit.v
+FC:/Users/ka266/Documents/Project1/mux2_1_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/mux2_1_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/mux2_1_32bit.v|
+!i113 1
+R5
+R6
+R7
+vRCA_16
+R1
+!i10b 1
+!s100 0l6o3[7VDYRZ:c1WTG0kX1
+I_:S=YKcCom3Z=U_f45o152
+R2
+R0
+w1663432558
+8C:/Users/ka266/Documents/Project1/RCA_16.v
+FC:/Users/ka266/Documents/Project1/RCA_16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/RCA_16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/RCA_16.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a_16
+vsubtractor
+R1
+!i10b 1
+!s100 W[HWl9;`6UeH9ghFO;`eT0
+IAdIB56Knl_j]Q:?kHQSCG0
+R2
+R0
+w1663432569
+8C:/Users/ka266/Documents/Project1/subtractor.v
+FC:/Users/ka266/Documents/Project1/subtractor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ka266/Documents/Project1/subtractor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ka266/Documents/Project1|C:/Users/ka266/Documents/Project1/subtractor.v|
+!i113 1
+R5
+R6
+R7
