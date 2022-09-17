@@ -8,10 +8,10 @@ module subtractor(overflow, cout, out, in1, in2);
 	genvar i;
 	generate
 		for(i=0; i<32; i = i+1) begin : negate
-			not (w[i], in2);
+			not (w[i], in2[i]);
 		end
 	endgenerate 
 	
-	adder(oveflow, cout, out, in1, w, 1'b1);
+	adder(overflow, cout, out, in1, w, 1'b1);
 
 endmodule 

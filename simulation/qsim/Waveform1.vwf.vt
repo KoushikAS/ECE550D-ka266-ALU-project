@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/17/2022 11:13:57"
+// Generated on "09/17/2022 12:20:45"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          subtractor
 // 
@@ -35,6 +35,7 @@ reg [31:0] in2;
 // wires                                               
 wire cout;
 wire [31:0] out;
+wire overflow;
 
 // assign statements (if any)                          
 subtractor i1 (
@@ -42,7 +43,8 @@ subtractor i1 (
 	.cout(cout),
 	.in1(in1),
 	.in2(in2),
-	.out(out)
+	.out(out),
+	.overflow(overflow)
 );
 initial 
 begin 
@@ -52,126 +54,176 @@ end
 initial
 begin
 	in1[31] = 1'b0;
+	in1[31] = #240000 1'b1;
+	in1[31] = #30000 1'b0;
 end 
 // in1[ 30 ]
 initial
 begin
 	in1[30] = 1'b0;
+	in1[30] = #180000 1'b1;
+	in1[30] = #50000 1'b0;
 end 
 // in1[ 29 ]
 initial
 begin
 	in1[29] = 1'b0;
+	in1[29] = #180000 1'b1;
+	in1[29] = #50000 1'b0;
 end 
 // in1[ 28 ]
 initial
 begin
 	in1[28] = 1'b0;
+	in1[28] = #180000 1'b1;
+	in1[28] = #50000 1'b0;
 end 
 // in1[ 27 ]
 initial
 begin
 	in1[27] = 1'b0;
+	in1[27] = #180000 1'b1;
+	in1[27] = #50000 1'b0;
 end 
 // in1[ 26 ]
 initial
 begin
 	in1[26] = 1'b0;
+	in1[26] = #180000 1'b1;
+	in1[26] = #50000 1'b0;
 end 
 // in1[ 25 ]
 initial
 begin
 	in1[25] = 1'b0;
+	in1[25] = #180000 1'b1;
+	in1[25] = #50000 1'b0;
 end 
 // in1[ 24 ]
 initial
 begin
 	in1[24] = 1'b0;
+	in1[24] = #180000 1'b1;
+	in1[24] = #50000 1'b0;
 end 
 // in1[ 23 ]
 initial
 begin
 	in1[23] = 1'b0;
+	in1[23] = #180000 1'b1;
+	in1[23] = #50000 1'b0;
 end 
 // in1[ 22 ]
 initial
 begin
 	in1[22] = 1'b0;
+	in1[22] = #180000 1'b1;
+	in1[22] = #50000 1'b0;
 end 
 // in1[ 21 ]
 initial
 begin
 	in1[21] = 1'b0;
+	in1[21] = #180000 1'b1;
+	in1[21] = #50000 1'b0;
 end 
 // in1[ 20 ]
 initial
 begin
 	in1[20] = 1'b0;
+	in1[20] = #180000 1'b1;
+	in1[20] = #50000 1'b0;
 end 
 // in1[ 19 ]
 initial
 begin
 	in1[19] = 1'b0;
+	in1[19] = #180000 1'b1;
+	in1[19] = #50000 1'b0;
 end 
 // in1[ 18 ]
 initial
 begin
 	in1[18] = 1'b0;
+	in1[18] = #180000 1'b1;
+	in1[18] = #50000 1'b0;
 end 
 // in1[ 17 ]
 initial
 begin
 	in1[17] = 1'b0;
+	in1[17] = #180000 1'b1;
+	in1[17] = #50000 1'b0;
 end 
 // in1[ 16 ]
 initial
 begin
 	in1[16] = 1'b0;
+	in1[16] = #180000 1'b1;
+	in1[16] = #50000 1'b0;
 end 
 // in1[ 15 ]
 initial
 begin
 	in1[15] = 1'b0;
+	in1[15] = #180000 1'b1;
+	in1[15] = #50000 1'b0;
 end 
 // in1[ 14 ]
 initial
 begin
 	in1[14] = 1'b0;
+	in1[14] = #180000 1'b1;
+	in1[14] = #50000 1'b0;
 end 
 // in1[ 13 ]
 initial
 begin
 	in1[13] = 1'b0;
+	in1[13] = #180000 1'b1;
+	in1[13] = #50000 1'b0;
 end 
 // in1[ 12 ]
 initial
 begin
 	in1[12] = 1'b0;
+	in1[12] = #180000 1'b1;
+	in1[12] = #50000 1'b0;
 end 
 // in1[ 11 ]
 initial
 begin
 	in1[11] = 1'b0;
+	in1[11] = #180000 1'b1;
+	in1[11] = #50000 1'b0;
 end 
 // in1[ 10 ]
 initial
 begin
 	in1[10] = 1'b0;
+	in1[10] = #180000 1'b1;
+	in1[10] = #50000 1'b0;
 end 
 // in1[ 9 ]
 initial
 begin
 	in1[9] = 1'b0;
+	in1[9] = #180000 1'b1;
+	in1[9] = #50000 1'b0;
 end 
 // in1[ 8 ]
 initial
 begin
 	in1[8] = 1'b0;
+	in1[8] = #180000 1'b1;
+	in1[8] = #50000 1'b0;
 end 
 // in1[ 7 ]
 initial
 begin
 	in1[7] = 1'b0;
+	in1[7] = #180000 1'b1;
+	in1[7] = #50000 1'b0;
 end 
 // in1[ 6 ]
 initial
@@ -181,6 +233,8 @@ begin
 	in1[6] = #50000 1'b0;
 	in1[6] = #20000 1'b1;
 	in1[6] = #80000 1'b0;
+	in1[6] = #10000 1'b1;
+	in1[6] = #50000 1'b0;
 end 
 // in1[ 5 ]
 initial
@@ -188,11 +242,15 @@ begin
 	in1[5] = 1'b0;
 	in1[5] = #20000 1'b1;
 	in1[5] = #50000 1'b0;
+	in1[5] = #110000 1'b1;
+	in1[5] = #50000 1'b0;
 end 
 // in1[ 4 ]
 initial
 begin
 	in1[4] = 1'b0;
+	in1[4] = #180000 1'b1;
+	in1[4] = #50000 1'b0;
 end 
 // in1[ 3 ]
 initial
@@ -200,6 +258,8 @@ begin
 	in1[3] = 1'b0;
 	in1[3] = #90000 1'b1;
 	in1[3] = #80000 1'b0;
+	in1[3] = #10000 1'b1;
+	in1[3] = #50000 1'b0;
 end 
 // in1[ 2 ]
 initial
@@ -209,6 +269,8 @@ begin
 	in1[2] = #50000 1'b0;
 	in1[2] = #20000 1'b1;
 	in1[2] = #80000 1'b0;
+	in1[2] = #10000 1'b1;
+	in1[2] = #50000 1'b0;
 end 
 // in1[ 1 ]
 initial
@@ -216,141 +278,199 @@ begin
 	in1[1] = 1'b0;
 	in1[1] = #90000 1'b1;
 	in1[1] = #80000 1'b0;
+	in1[1] = #10000 1'b1;
+	in1[1] = #50000 1'b0;
+	in1[1] = #10000 1'b1;
+	in1[1] = #30000 1'b0;
 end 
 // in1[ 0 ]
 initial
 begin
 	in1[0] = 1'b0;
+	in1[0] = #180000 1'b1;
+	in1[0] = #50000 1'b0;
 end 
 // in2[ 31 ]
 initial
 begin
 	in2[31] = 1'b0;
+	in2[31] = #180000 1'b1;
+	in2[31] = #50000 1'b0;
 end 
 // in2[ 30 ]
 initial
 begin
 	in2[30] = 1'b0;
+	in2[30] = #180000 1'b1;
+	in2[30] = #50000 1'b0;
 end 
 // in2[ 29 ]
 initial
 begin
 	in2[29] = 1'b0;
+	in2[29] = #180000 1'b1;
+	in2[29] = #50000 1'b0;
 end 
 // in2[ 28 ]
 initial
 begin
 	in2[28] = 1'b0;
+	in2[28] = #180000 1'b1;
+	in2[28] = #50000 1'b0;
 end 
 // in2[ 27 ]
 initial
 begin
 	in2[27] = 1'b0;
+	in2[27] = #180000 1'b1;
+	in2[27] = #50000 1'b0;
 end 
 // in2[ 26 ]
 initial
 begin
 	in2[26] = 1'b0;
+	in2[26] = #180000 1'b1;
+	in2[26] = #50000 1'b0;
 end 
 // in2[ 25 ]
 initial
 begin
 	in2[25] = 1'b0;
+	in2[25] = #180000 1'b1;
+	in2[25] = #50000 1'b0;
 end 
 // in2[ 24 ]
 initial
 begin
 	in2[24] = 1'b0;
+	in2[24] = #180000 1'b1;
+	in2[24] = #50000 1'b0;
 end 
 // in2[ 23 ]
 initial
 begin
 	in2[23] = 1'b0;
+	in2[23] = #180000 1'b1;
+	in2[23] = #50000 1'b0;
 end 
 // in2[ 22 ]
 initial
 begin
 	in2[22] = 1'b0;
+	in2[22] = #180000 1'b1;
+	in2[22] = #50000 1'b0;
 end 
 // in2[ 21 ]
 initial
 begin
 	in2[21] = 1'b0;
+	in2[21] = #180000 1'b1;
+	in2[21] = #50000 1'b0;
 end 
 // in2[ 20 ]
 initial
 begin
 	in2[20] = 1'b0;
+	in2[20] = #180000 1'b1;
+	in2[20] = #50000 1'b0;
 end 
 // in2[ 19 ]
 initial
 begin
 	in2[19] = 1'b0;
+	in2[19] = #180000 1'b1;
+	in2[19] = #50000 1'b0;
 end 
 // in2[ 18 ]
 initial
 begin
 	in2[18] = 1'b0;
+	in2[18] = #180000 1'b1;
+	in2[18] = #50000 1'b0;
 end 
 // in2[ 17 ]
 initial
 begin
 	in2[17] = 1'b0;
+	in2[17] = #180000 1'b1;
+	in2[17] = #50000 1'b0;
 end 
 // in2[ 16 ]
 initial
 begin
 	in2[16] = 1'b0;
+	in2[16] = #180000 1'b1;
+	in2[16] = #50000 1'b0;
 end 
 // in2[ 15 ]
 initial
 begin
 	in2[15] = 1'b0;
+	in2[15] = #180000 1'b1;
+	in2[15] = #50000 1'b0;
 end 
 // in2[ 14 ]
 initial
 begin
 	in2[14] = 1'b0;
+	in2[14] = #180000 1'b1;
+	in2[14] = #50000 1'b0;
 end 
 // in2[ 13 ]
 initial
 begin
 	in2[13] = 1'b0;
+	in2[13] = #180000 1'b1;
+	in2[13] = #50000 1'b0;
 end 
 // in2[ 12 ]
 initial
 begin
 	in2[12] = 1'b0;
+	in2[12] = #180000 1'b1;
+	in2[12] = #50000 1'b0;
 end 
 // in2[ 11 ]
 initial
 begin
 	in2[11] = 1'b0;
+	in2[11] = #180000 1'b1;
+	in2[11] = #50000 1'b0;
 end 
 // in2[ 10 ]
 initial
 begin
 	in2[10] = 1'b0;
+	in2[10] = #180000 1'b1;
+	in2[10] = #50000 1'b0;
 end 
 // in2[ 9 ]
 initial
 begin
 	in2[9] = 1'b0;
+	in2[9] = #180000 1'b1;
+	in2[9] = #50000 1'b0;
 end 
 // in2[ 8 ]
 initial
 begin
 	in2[8] = 1'b0;
+	in2[8] = #180000 1'b1;
+	in2[8] = #50000 1'b0;
 end 
 // in2[ 7 ]
 initial
 begin
 	in2[7] = 1'b0;
+	in2[7] = #180000 1'b1;
+	in2[7] = #50000 1'b0;
 end 
 // in2[ 6 ]
 initial
 begin
 	in2[6] = 1'b0;
+	in2[6] = #180000 1'b1;
+	in2[6] = #50000 1'b0;
 end 
 // in2[ 5 ]
 initial
@@ -358,6 +478,8 @@ begin
 	in2[5] = 1'b0;
 	in2[5] = #40000 1'b1;
 	in2[5] = #80000 1'b0;
+	in2[5] = #60000 1'b1;
+	in2[5] = #50000 1'b0;
 end 
 // in2[ 4 ]
 initial
@@ -365,6 +487,8 @@ begin
 	in2[4] = 1'b0;
 	in2[4] = #40000 1'b1;
 	in2[4] = #80000 1'b0;
+	in2[4] = #60000 1'b1;
+	in2[4] = #50000 1'b0;
 end 
 // in2[ 3 ]
 initial
@@ -372,21 +496,31 @@ begin
 	in2[3] = 1'b0;
 	in2[3] = #40000 1'b1;
 	in2[3] = #80000 1'b0;
+	in2[3] = #60000 1'b1;
+	in2[3] = #50000 1'b0;
 end 
 // in2[ 2 ]
 initial
 begin
 	in2[2] = 1'b0;
+	in2[2] = #180000 1'b1;
+	in2[2] = #50000 1'b0;
+	in2[2] = #10000 1'b1;
+	in2[2] = #40000 1'b0;
 end 
 // in2[ 1 ]
 initial
 begin
 	in2[1] = 1'b0;
+	in2[1] = #180000 1'b1;
+	in2[1] = #50000 1'b0;
 end 
 // in2[ 0 ]
 initial
 begin
 	in2[0] = 1'b0;
+	in2[0] = #240000 1'b1;
+	in2[0] = #40000 1'b0;
 end 
 endmodule
 

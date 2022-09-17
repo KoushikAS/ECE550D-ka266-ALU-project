@@ -10,10 +10,12 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	
 	wire[31:0] w1,w2;
 	wire cout1,cout2;
+	wire o1,o2;
 
-	adder(overflow, cout1, w1, data_operandA, data_operandB, 1'b0);
-	subtractor(overflow, cout2, w2, data_operandA, data_operandB);
+	adder(o1, cout1, w1, data_operandA, data_operandB, 1'b0);
+	subtractor(o2, cout2, w2, data_operandA, data_operandB);
 	
 	mux2_1_32bit(data_result,ctrl_ALUopcode[0], w1, w2 );
+	mux1bit(overflow,ctrl_ALUopcode[0],o1,o2);
 	
 endmodule
