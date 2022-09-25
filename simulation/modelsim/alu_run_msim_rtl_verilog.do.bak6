@@ -13,9 +13,6 @@ vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/User
 vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/subtractor.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/alu.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/mux2_1_32bit.v}
-vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/mux4_2_32bit.v}
-vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/bitwiseand.v}
-vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/bitwiseor.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/ka266/Documents/Project1 {C:/Users/ka266/Documents/Project1/alu_tb.v}
 

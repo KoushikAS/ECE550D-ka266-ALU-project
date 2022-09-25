@@ -1,0 +1,11 @@
+module bitwiseand(out, in1, in2);
+	input[31:0] in1, in2;
+	output[31:0] out;
+	
+	genvar i;
+	generate
+		for(i=0; i<31; i = i+1) begin : ander
+			and ai (out[i],in0[i],in1[i]);
+		end
+	endgenerate 
+endmodule 
