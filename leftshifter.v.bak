@@ -1,0 +1,27 @@
+module leftshifter(out, in, shift_amt);
+	input[31:0] in;
+	input[1:0] shift_amt;
+	output[31:0] out;
+	
+	wire[31:0] w1;
+
+	genvar i;
+	generate
+		for(i=31; i>0; i = i-1) begin : mux1
+			mux1bit mi (w1[i],shift_amt[0],in[i],in[i-1]);
+		end
+	endgenerate 
+	
+	mux1bit mil (w1[0],shift_amt[0], in[0], 1b'0);
+	
+	genvar j;
+	generate
+		for(j=31; j>1; i = j-1) begin : mux2
+			mux1bit mj (out[i],shift_amt[1],w1[i],w1[i-2]);
+		end
+	endgenerate 
+	
+	mux1bit mjl1 (out[1],shift_amt[1],w1[1],1b'0);
+	mux1bit mjl2 (out[0],shift_amt[1],w1[0],1b'0);
+
+endmodule 

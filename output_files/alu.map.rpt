@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu
-Sun Sep 25 18:08:43 2022
+Wed Sep 28 15:03:55 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,15 +15,47 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "subtractor:r2|adder:a1"
- 11. Port Connectivity Checks: "subtractor:r2"
- 12. Port Connectivity Checks: "adder:r1|RCA_16:r3"
- 13. Port Connectivity Checks: "adder:r1|RCA_16:r2"
- 14. Port Connectivity Checks: "adder:r1|RCA_16:r1"
- 15. Port Connectivity Checks: "adder:r1"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "mux16_4_32bit:m1"
+ 11. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm0"
+ 12. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm1"
+ 13. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm2"
+ 14. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm3"
+ 15. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm4"
+ 16. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm5"
+ 17. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm6"
+ 18. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm7"
+ 19. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm8"
+ 20. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm9"
+ 21. Port Connectivity Checks: "leftshifter:r5|mux1bit:mml0"
+ 22. Port Connectivity Checks: "leftshifter:r5|mux1bit:mml1"
+ 23. Port Connectivity Checks: "leftshifter:r5|mux1bit:mml2"
+ 24. Port Connectivity Checks: "leftshifter:r5|mux1bit:mml3"
+ 25. Port Connectivity Checks: "leftshifter:r5|mux1bit:mml4"
+ 26. Port Connectivity Checks: "leftshifter:r5|mux1bit:mm15"
+ 27. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll0"
+ 28. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll1"
+ 29. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll2"
+ 30. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll3"
+ 31. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll4"
+ 32. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll5"
+ 33. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll6"
+ 34. Port Connectivity Checks: "leftshifter:r5|mux1bit:mll7"
+ 35. Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl0"
+ 36. Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl1"
+ 37. Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl2"
+ 38. Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl3"
+ 39. Port Connectivity Checks: "leftshifter:r5|mux1bit:mjl2"
+ 40. Port Connectivity Checks: "leftshifter:r5|mux1bit:mjl1"
+ 41. Port Connectivity Checks: "leftshifter:r5|mux1bit:mil"
+ 42. Port Connectivity Checks: "subtractor:r2|adder:a1"
+ 43. Port Connectivity Checks: "subtractor:r2"
+ 44. Port Connectivity Checks: "adder:r1|RCA_16:r3"
+ 45. Port Connectivity Checks: "adder:r1|RCA_16:r2"
+ 46. Port Connectivity Checks: "adder:r1|RCA_16:r1"
+ 47. Port Connectivity Checks: "adder:r1"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -50,13 +82,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 25 18:08:43 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Sep 28 15:03:55 2022       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
 ; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 191                                         ;
-;     Total combinational functions  ; 191                                         ;
+; Total logic elements               ; 591                                         ;
+;     Total combinational functions  ; 591                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 109                                         ;
@@ -169,137 +201,276 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                     ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
-; mux2_1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux2_1.v       ;         ;
-; fulladder.v                      ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/fulladder.v    ;         ;
-; adder.v                          ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/adder.v        ;         ;
-; mux1bit.v                        ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux1bit.v      ;         ;
-; RCA_16.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/RCA_16.v       ;         ;
-; subtractor.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/subtractor.v   ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/alu.v          ;         ;
-; mux2_1_32bit.v                   ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux2_1_32bit.v ;         ;
-; mux4_2_32bit.v                   ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux4_2_32bit.v ;         ;
-; bitwiseand.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/bitwiseand.v   ;         ;
-; bitwiseor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/bitwiseor.v    ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; mux2_1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux2_1.v        ;         ;
+; fulladder.v                      ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/fulladder.v     ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/adder.v         ;         ;
+; mux1bit.v                        ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux1bit.v       ;         ;
+; RCA_16.v                         ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/RCA_16.v        ;         ;
+; subtractor.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/subtractor.v    ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/alu.v           ;         ;
+; mux2_1_32bit.v                   ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux2_1_32bit.v  ;         ;
+; mux4_2_32bit.v                   ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux4_2_32bit.v  ;         ;
+; bitwiseand.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/bitwiseand.v    ;         ;
+; bitwiseor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/bitwiseor.v     ;         ;
+; leftshifter.v                    ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/leftshifter.v   ;         ;
+; mux16_4_32bit.v                  ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/mux16_4_32bit.v ;         ;
+; islessthan.v                     ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/islessthan.v    ;         ;
+; isne.v                           ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/isne.v          ;         ;
+; rightshifter.v                   ; yes             ; User Verilog HDL File  ; C:/Users/ka266/Documents/Project1/rightshifter.v  ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 191                     ;
-;                                             ;                         ;
-; Total combinational functions               ; 191                     ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 104                     ;
-;     -- 3 input functions                    ; 76                      ;
-;     -- <=2 input functions                  ; 11                      ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 191                     ;
-;     -- arithmetic mode                      ; 0                       ;
-;                                             ;                         ;
-; Total registers                             ; 0                       ;
-;     -- Dedicated logic registers            ; 0                       ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 109                     ;
-;                                             ;                         ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-;                                             ;                         ;
-; Maximum fan-out node                        ; ctrl_ALUopcode[1]~input ;
-; Maximum fan-out                             ; 49                      ;
-; Total fan-out                               ; 808                     ;
-; Average fan-out                             ; 1.98                    ;
-+---------------------------------------------+-------------------------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 591                    ;
+;                                             ;                        ;
+; Total combinational functions               ; 591                    ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 304                    ;
+;     -- 3 input functions                    ; 243                    ;
+;     -- <=2 input functions                  ; 44                     ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 591                    ;
+;     -- arithmetic mode                      ; 0                      ;
+;                                             ;                        ;
+; Total registers                             ; 0                      ;
+;     -- Dedicated logic registers            ; 0                      ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 109                    ;
+;                                             ;                        ;
+; Embedded Multiplier 9-bit elements          ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; ctrl_shiftamt[0]~input ;
+; Maximum fan-out                             ; 71                     ;
+; Total fan-out                               ; 2177                   ;
+; Average fan-out                             ; 2.69                   ;
++---------------------------------------------+------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name  ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+--------------+
-; |alu                                      ; 191 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                              ; alu          ; work         ;
-;    |adder:r1|                             ; 47 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1                                                     ; adder        ; work         ;
-;       |RCA_16:r1|                         ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1                                           ; RCA_16       ; work         ;
-;          |fulladder:fal|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fal                             ; fulladder    ; work         ;
-;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[10].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[11].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[12].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[13].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[14].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[1].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[2].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[3].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[3].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[4].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[4].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[5].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[6].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[6].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[7].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[8].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[9].f1i                ; fulladder    ; work         ;
-;       |RCA_16:r2|                         ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2                                           ; RCA_16       ; work         ;
-;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[10].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[11].f1i|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[11].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[12].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[13].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[14].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[1].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[2].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[3].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[3].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[4].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[4].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[5].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[6].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[6].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[7].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[8].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[9].f1i                ; fulladder    ; work         ;
-;       |RCA_16:r3|                         ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3                                           ; RCA_16       ; work         ;
-;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[10].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[11].f1i|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[11].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[12].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[13].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[14].f1i               ; fulladder    ; work         ;
-;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[1].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[2].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[3].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[3].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[4].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[4].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[5].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[6].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[6].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[7].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[8].f1i                ; fulladder    ; work         ;
-;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[9].f1i                ; fulladder    ; work         ;
-;    |mux1bit:m2|                           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux1bit:m2                                                   ; mux1bit      ; work         ;
-;    |mux4_2_32bit:m1|                      ; 103 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux4_2_32bit:m1                                              ; mux4_2_32bit ; work         ;
-;       |mux2_1_32bit:m2|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux4_2_32bit:m1|mux2_1_32bit:m2                              ; mux2_1_32bit ; work         ;
-;       |mux2_1_32bit:m3|                   ; 101 (101)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux4_2_32bit:m1|mux2_1_32bit:m3                              ; mux2_1_32bit ; work         ;
-;    |subtractor:r2|                        ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2                                                ; subtractor   ; work         ;
-;       |adder:a1|                          ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1                                       ; adder        ; work         ;
-;          |RCA_16:r1|                      ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1                             ; RCA_16       ; work         ;
-;             |fulladder:fal|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fal               ; fulladder    ; work         ;
-;             |fulladder:fulladder[10].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[10].f1i ; fulladder    ; work         ;
-;             |fulladder:fulladder[11].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[11].f1i ; fulladder    ; work         ;
-;             |fulladder:fulladder[12].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[12].f1i ; fulladder    ; work         ;
-;             |fulladder:fulladder[13].f1i| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[13].f1i ; fulladder    ; work         ;
-;             |fulladder:fulladder[14].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[14].f1i ; fulladder    ; work         ;
-;             |fulladder:fulladder[1].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[1].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[2].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[2].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[3].f1i|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[3].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[4].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[4].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[5].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[5].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[6].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[6].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[7].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[7].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[8].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[8].f1i  ; fulladder    ; work         ;
-;             |fulladder:fulladder[9].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[9].f1i  ; fulladder    ; work         ;
-;          |RCA_16:r2|                      ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2                             ; RCA_16       ; work         ;
-;             |fulladder:fulladder[11].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[11].f1i ; fulladder    ; work         ;
-;             |fulladder:fulladder[4].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[4].f1i  ; fulladder    ; work         ;
-;          |mux2_1:m1|                      ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|mux2_1:m1                             ; mux2_1       ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                     ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name   ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+---------------+--------------+
+; |alu                                      ; 591 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                              ; alu           ; work         ;
+;    |adder:r1|                             ; 62 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1                                                     ; adder         ; work         ;
+;       |RCA_16:r1|                         ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1                                           ; RCA_16        ; work         ;
+;          |fulladder:fal|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fal                             ; fulladder     ; work         ;
+;          |fulladder:fulladder[10].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[10].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[11].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[12].f1i|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[12].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[13].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[14].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[1].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[2].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[3].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[3].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[4].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[4].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[5].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[5].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[6].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[6].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[7].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[7].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[8].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[9].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r1|fulladder:fulladder[9].f1i                ; fulladder     ; work         ;
+;       |RCA_16:r2|                         ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2                                           ; RCA_16        ; work         ;
+;          |fulladder:fal|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fal                             ; fulladder     ; work         ;
+;          |fulladder:fulladder[10].f1i|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[10].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[11].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[12].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[13].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[14].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[1].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[2].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[3].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[3].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[4].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[4].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[5].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[5].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[6].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[6].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[7].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[8].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[9].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r2|fulladder:fulladder[9].f1i                ; fulladder     ; work         ;
+;       |RCA_16:r3|                         ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3                                           ; RCA_16        ; work         ;
+;          |fulladder:fal|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fal                             ; fulladder     ; work         ;
+;          |fulladder:fulladder[10].f1i|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[10].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[11].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[11].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[12].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[12].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[13].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[13].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[14].f1i|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[14].f1i               ; fulladder     ; work         ;
+;          |fulladder:fulladder[1].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[1].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[2].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[2].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[3].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[3].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[4].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[4].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[5].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[5].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[6].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[6].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[7].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[7].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[8].f1i|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[8].f1i                ; fulladder     ; work         ;
+;          |fulladder:fulladder[9].f1i|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|adder:r1|RCA_16:r3|fulladder:fulladder[9].f1i                ; fulladder     ; work         ;
+;    |islessthan:l|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|islessthan:l                                                 ; islessthan    ; work         ;
+;    |isne:in|                              ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|isne:in                                                      ; isne          ; work         ;
+;    |leftshifter:r5|                       ; 93 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5                                               ; leftshifter   ; work         ;
+;       |mux1bit:mjl1|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mjl1                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll0|                      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll0                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll1|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll1                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll3|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll3                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll4|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll4                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll5|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll5                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll6|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll6                                  ; mux1bit       ; work         ;
+;       |mux1bit:mll7|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mll7                                  ; mux1bit       ; work         ;
+;       |mux1bit:mm15|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mm15                                  ; mux1bit       ; work         ;
+;       |mux1bit:mml2|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mml2                                  ; mux1bit       ; work         ;
+;       |mux1bit:mml3|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mml3                                  ; mux1bit       ; work         ;
+;       |mux1bit:mml4|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mml4                                  ; mux1bit       ; work         ;
+;       |mux1bit:mux1[26].mi|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux1[26].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux1[27].mi|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux1[27].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux1[28].mi|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux1[28].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux1[29].mi|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux1[29].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[10].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[10].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[11].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[11].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[12].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[12].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[13].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[13].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[14].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[14].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[15].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[15].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[16].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[16].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[17].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[17].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[18].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[18].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[19].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[19].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[20].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[20].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[21].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[21].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[22].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[22].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[23].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[23].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[24].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[24].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[25].mj|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[25].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[26].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[26].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[27].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[27].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[2].mj|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[2].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[3].mj|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[3].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[4].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[4].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[5].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[5].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[6].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[6].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[7].mj|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[7].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[8].mj|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[8].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux2[9].mj|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux2[9].mj                            ; mux1bit       ; work         ;
+;       |mux1bit:mux3[10].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[10].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[11].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[11].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[12].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[12].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[13].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[13].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[14].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[14].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[15].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[15].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[16].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[16].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[17].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[17].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[18].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[18].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[19].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[19].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[20].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[20].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[21].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[21].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[22].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[22].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[23].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[23].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[8].mk|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[8].mk                            ; mux1bit       ; work         ;
+;       |mux1bit:mux3[9].mk|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux3[9].mk                            ; mux1bit       ; work         ;
+;       |mux1bit:mux4[10].ml|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[10].ml                           ; mux1bit       ; work         ;
+;       |mux1bit:mux4[11].ml|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[11].ml                           ; mux1bit       ; work         ;
+;       |mux1bit:mux4[12].ml|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[12].ml                           ; mux1bit       ; work         ;
+;       |mux1bit:mux4[13].ml|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[13].ml                           ; mux1bit       ; work         ;
+;       |mux1bit:mux4[14].ml|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[14].ml                           ; mux1bit       ; work         ;
+;       |mux1bit:mux4[15].ml|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[15].ml                           ; mux1bit       ; work         ;
+;       |mux1bit:mux4[8].ml|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[8].ml                            ; mux1bit       ; work         ;
+;       |mux1bit:mux4[9].ml|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|leftshifter:r5|mux1bit:mux4[9].ml                            ; mux1bit       ; work         ;
+;    |mux16_4_32bit:m1|                     ; 260 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1                                             ; mux16_4_32bit ; work         ;
+;       |mux4_2_32bit:m1|                   ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m1                             ; mux4_2_32bit  ; work         ;
+;          |mux2_1_32bit:m2|                ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m1|mux2_1_32bit:m2             ; mux2_1_32bit  ; work         ;
+;       |mux4_2_32bit:m2|                   ; 95 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2                             ; mux4_2_32bit  ; work         ;
+;          |mux2_1_32bit:m1|                ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1             ; mux2_1_32bit  ; work         ;
+;          |mux2_1_32bit:m3|                ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m3             ; mux2_1_32bit  ; work         ;
+;       |mux4_2_32bit:m5|                   ; 146 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m5                             ; mux4_2_32bit  ; work         ;
+;          |mux2_1_32bit:m1|                ; 84 (84)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m5|mux2_1_32bit:m1             ; mux2_1_32bit  ; work         ;
+;          |mux2_1_32bit:m3|                ; 62 (62)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m5|mux2_1_32bit:m3             ; mux2_1_32bit  ; work         ;
+;    |mux1bit:m2|                           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux1bit:m2                                                   ; mux1bit       ; work         ;
+;    |rightshifter:r6|                      ; 85 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6                                              ; rightshifter  ; work         ;
+;       |mux1bit:mux1[2].mi|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux1[2].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux1[3].mi|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux1[3].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux1[4].mi|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux1[4].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux1[5].mi|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux1[5].mi                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[10].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[10].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[11].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[11].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[12].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[12].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[13].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[13].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[14].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[14].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[15].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[15].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[16].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[16].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[17].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[17].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[18].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[18].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[19].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[19].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[20].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[20].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[21].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[21].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[22].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[22].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[23].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[23].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[24].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[24].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[25].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[25].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[26].mj|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[26].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[27].mj|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[27].mj                          ; mux1bit       ; work         ;
+;       |mux1bit:mux2[4].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[4].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[5].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[5].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[6].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[6].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[7].mj|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[7].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[8].mj|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[8].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux2[9].mj|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux2[9].mj                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[0].mk|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[0].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[10].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[10].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[11].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[11].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[12].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[12].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[13].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[13].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[14].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[14].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[15].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[15].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[16].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[16].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[17].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[17].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[18].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[18].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[19].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[19].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[1].mk|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[1].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[20].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[20].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[21].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[21].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[22].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[22].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[23].mk|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[23].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[24].mk|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[24].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[25].mk|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[25].mk                          ; mux1bit       ; work         ;
+;       |mux1bit:mux3[8].mk|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[8].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux3[9].mk|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux3[9].mk                           ; mux1bit       ; work         ;
+;       |mux1bit:mux5[0].mm|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux5[0].mm                           ; mux1bit       ; work         ;
+;       |mux1bit:mux5[1].mm|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|rightshifter:r6|mux1bit:mux5[1].mm                           ; mux1bit       ; work         ;
+;    |subtractor:r2|                        ; 75 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2                                                ; subtractor    ; work         ;
+;       |adder:a1|                          ; 75 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1                                       ; adder         ; work         ;
+;          |RCA_16:r1|                      ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1                             ; RCA_16        ; work         ;
+;             |fulladder:fal|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fal               ; fulladder     ; work         ;
+;             |fulladder:fulladder[10].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[10].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[11].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[11].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[12].f1i| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[12].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[13].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[13].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[14].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[14].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[1].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[1].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[2].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[2].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[3].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[3].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[4].f1i|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[4].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[5].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[5].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[6].f1i|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[6].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[7].f1i|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[7].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[8].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[8].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[9].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r1|fulladder:fulladder[9].f1i  ; fulladder     ; work         ;
+;          |RCA_16:r2|                      ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2                             ; RCA_16        ; work         ;
+;             |fulladder:fulladder[10].f1i| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[10].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[13].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[13].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[14].f1i| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[14].f1i ; fulladder     ; work         ;
+;             |fulladder:fulladder[3].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[3].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[4].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[4].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[5].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[5].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[6].f1i|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[6].f1i  ; fulladder     ; work         ;
+;             |fulladder:fulladder[9].f1i|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|RCA_16:r2|fulladder:fulladder[9].f1i  ; fulladder     ; work         ;
+;          |mux2_1:m1|                      ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|subtractor:r2|adder:a1|mux2_1:m1                             ; mux2_1        ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -318,14 +489,317 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |alu|mux4_2_32bit:m1|mux2_1_32bit:m3|orgate[9].ok  ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |alu|mux4_2_32bit:m1|mux2_1_32bit:m3|orgate[24].ok ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m5|mux2_1_32bit:m1|orgate[1].ok  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1|orgate[21].ok ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1|orgate[14].ok ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1|orgate[27].ok ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1|orgate[7].ok  ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 45 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m5|mux2_1_32bit:m1|orgate[23].ok ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1|orgate[28].ok ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |alu|mux16_4_32bit:m1|mux4_2_32bit:m2|mux2_1_32bit:m1|orgate[3].ok  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "mux16_4_32bit:m1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; in6  ; Input ; Info     ; Stuck at GND       ;
+; in7  ; Input ; Info     ; Stuck at GND       ;
+; in8  ; Input ; Info     ; Stuck at GND       ;
+; in9  ; Input ; Info     ; Stuck at GND       ;
+; in10 ; Input ; Info     ; Stuck at GND       ;
+; in11 ; Input ; Info     ; Stuck at GND       ;
+; in12 ; Input ; Info     ; Stuck at GND       ;
+; in13 ; Input ; Info     ; Stuck at GND       ;
+; in14 ; Input ; Info     ; Stuck at GND       ;
+; in15 ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm0" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm1" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm2" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm3" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm4" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm5" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm6" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm7" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm8" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm9" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mml0" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mml1" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mml2" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mml3" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mml4" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mm15" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll0" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll1" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll2" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll3" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll4" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll5" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll6" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mll7" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl0" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl1" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl2" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mkl3" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mjl2" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mjl1" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "leftshifter:r5|mux1bit:mil" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; in1  ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
 
 
 +----------------------------------------------------+
@@ -389,15 +863,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 109                         ;
-; cycloneiii_lcell_comb ; 192                         ;
-;     normal            ; 192                         ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 76                          ;
-;         4 data inputs ; 104                         ;
+; cycloneiii_lcell_comb ; 592                         ;
+;     normal            ; 592                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 44                          ;
+;         3 data inputs ; 243                         ;
+;         4 data inputs ; 304                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 28.00                       ;
-; Average LUT depth     ; 17.50                       ;
+; Max LUT depth         ; 26.00                       ;
+; Average LUT depth     ; 11.87                       ;
 +-----------------------+-----------------------------+
 
 
@@ -406,7 +880,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -416,7 +890,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Sep 25 18:08:29 2022
+    Info: Processing started: Wed Sep 28 15:03:36 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -444,9 +918,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file bitwise
     Info (12023): Found entity 1: bitwiseand File: C:/Users/ka266/Documents/Project1/bitwiseand.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bitwiseor.v
     Info (12023): Found entity 1: bitwiseor File: C:/Users/ka266/Documents/Project1/bitwiseor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file leftshifter.v
+    Info (12023): Found entity 1: leftshifter File: C:/Users/ka266/Documents/Project1/leftshifter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux16_4_32bit.v
+    Info (12023): Found entity 1: mux16_4_32bit File: C:/Users/ka266/Documents/Project1/mux16_4_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file islessthan.v
+    Info (12023): Found entity 1: islessthan File: C:/Users/ka266/Documents/Project1/islessthan.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file isne.v
+    Info (12023): Found entity 1: isne File: C:/Users/ka266/Documents/Project1/isne.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rightshifter.v
+    Info (12023): Found entity 1: rightshifter File: C:/Users/ka266/Documents/Project1/rightshifter.v Line: 1
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Warning (10034): Output port "isNotEqual" at alu.v(7) has no driver File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
-Warning (10034): Output port "isLessThan" at alu.v(7) has no driver File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
 Info (12128): Elaborating entity "adder" for hierarchy "adder:r1" File: C:/Users/ka266/Documents/Project1/alu.v Line: 15
 Info (12128): Elaborating entity "RCA_16" for hierarchy "adder:r1|RCA_16:r1" File: C:/Users/ka266/Documents/Project1/adder.v Line: 11
 Info (12128): Elaborating entity "fulladder" for hierarchy "adder:r1|RCA_16:r1|fulladder:fa1" File: C:/Users/ka266/Documents/Project1/RCA_16.v Line: 9
@@ -455,31 +937,26 @@ Info (12128): Elaborating entity "mux1bit" for hierarchy "adder:r1|mux1bit:m2" F
 Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:r2" File: C:/Users/ka266/Documents/Project1/alu.v Line: 16
 Info (12128): Elaborating entity "bitwiseand" for hierarchy "bitwiseand:r3" File: C:/Users/ka266/Documents/Project1/alu.v Line: 17
 Info (12128): Elaborating entity "bitwiseor" for hierarchy "bitwiseor:r4" File: C:/Users/ka266/Documents/Project1/alu.v Line: 18
-Info (12128): Elaborating entity "mux4_2_32bit" for hierarchy "mux4_2_32bit:m1" File: C:/Users/ka266/Documents/Project1/alu.v Line: 20
-Info (12128): Elaborating entity "mux2_1_32bit" for hierarchy "mux4_2_32bit:m1|mux2_1_32bit:m1" File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 8
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
-    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/ka266/Documents/Project1/alu.v Line: 7
+Info (12128): Elaborating entity "leftshifter" for hierarchy "leftshifter:r5" File: C:/Users/ka266/Documents/Project1/alu.v Line: 19
+Info (12128): Elaborating entity "rightshifter" for hierarchy "rightshifter:r6" File: C:/Users/ka266/Documents/Project1/alu.v Line: 20
+Info (12128): Elaborating entity "islessthan" for hierarchy "islessthan:l" File: C:/Users/ka266/Documents/Project1/alu.v Line: 23
+Info (12128): Elaborating entity "isne" for hierarchy "isne:in" File: C:/Users/ka266/Documents/Project1/alu.v Line: 24
+Info (12128): Elaborating entity "mux16_4_32bit" for hierarchy "mux16_4_32bit:m1" File: C:/Users/ka266/Documents/Project1/alu.v Line: 26
+Info (12128): Elaborating entity "mux4_2_32bit" for hierarchy "mux16_4_32bit:m1|mux4_2_32bit:m1" File: C:/Users/ka266/Documents/Project1/mux16_4_32bit.v Line: 8
+Info (12128): Elaborating entity "mux2_1_32bit" for hierarchy "mux16_4_32bit:m1|mux4_2_32bit:m1|mux2_1_32bit:m1" File: C:/Users/ka266/Documents/Project1/mux4_2_32bit.v Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[2]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[0]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[1]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[2]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[3]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[4]" File: C:/Users/ka266/Documents/Project1/alu.v Line: 4
-Info (21057): Implemented 300 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 700 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 74 input pins
     Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 191 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Sun Sep 25 18:08:43 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 591 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4741 megabytes
+    Info: Processing ended: Wed Sep 28 15:03:55 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:24
 
 

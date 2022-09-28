@@ -34,11 +34,11 @@ module alu_tb();
         checkAnd();
         checkAdd();
         checkSub();
-        //checkSLL();
-        //checkSRA();
+        checkSLL();
+        checkSRA();
 
-        //checkNE();
-        //checkLT();
+        checkNE();
+        checkLT();
         checkOverflow();
 
         if(errors == 0) begin
